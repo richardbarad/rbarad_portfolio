@@ -1,0 +1,5 @@
+"0",""
+"0","Data2 <- Data %>%"
+"0","    mutate(interval60 = floor_date(ymd_hms(started_at), unit = ""60 mins"")) %>%"
+"0","           group_by(start_station_name,interval60) %>% tally()"
+"0",""

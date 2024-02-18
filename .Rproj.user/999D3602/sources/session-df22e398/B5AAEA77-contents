@@ -1,0 +1,53 @@
+---
+title: "Developing a Wind Suitability Map for Pennsylvania"
+author: "Richard Barad"
+date: "2023-12-15"
+categories: [ArcGIS, Environment]
+about:
+  id: hero-heading
+  image-width: 0em
+  template: solana
+  links:
+    - icon: journal-code
+      text: Full Policy Memo
+      href: posts/PA_wind_mapping/PA_Policy_Memo.pdf
+format: 
+  html:
+    toc: true
+    code-fold: true
+    fontsize: 11pt
+execute:
+  echo: true
+---
+
+# Overview
+
+::: {.grid}
+
+<!-- Left column has a width of 4/12 and shows a picture of me -->
+::: {.g-col-6}
+::: {.left-align}
+
+This project was completed as a final project for ENMG 5020 - Introduction to Energy Policy. The project is a policy memo directed to the office of the Governor of Pennsylvania  encouraging his office to expand the amount of wind energy in Pennsylvania. A key pieces of memo is highlighting the results of a wind suitability mapping analysis I completed for the state of Pennsylvania. The analysis uses multi-criteria decision making (MCDM) techniques which was carried out using ArcGIS Pro. I identify areas suitable for wind turbine development based on five main criteria: Wind Speed, Land Cover, Population Density, Distance to Roads, and Distance to existing transmission lines. Transmission
+
+:::
+:::
+
+
+::: {.g-col-6}
+![](PA_wind_map.png)
+:::
+:::
+
+Prior to carrying out my analysis I conducted an literature review of previous wind suitability mapping techniques, and based my own methods on the outcomes of the literature review. The map below shows the results of the wind suitability mapping work. The map includes an overlay showing important bird areas and state lands. Important bird areas are included due to concerns about building wind turbines on important bird areas. State lands are included in the map in order to highlight the large amount of state land that is suitable for wind turbine development.
+
+My full policy memo is available for review and download below.
+
+```{=html}
+<iframe 
+  width="800" 
+  height="800" 
+  src="PA_Policy_Memo.pdf">
+</iframe>
+```
+

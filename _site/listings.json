@@ -1,0 +1,28 @@
+[
+  {
+    "listing": "/portfolio.html",
+    "items": [
+      "/posts/FEWS_NET_GDHI/GDHI.html",
+      "/posts/Chicago_Inspections/Chicago_Restaurants.html",
+      "/posts/PA_wind_mapping/PA_Wind.html",
+      "/posts/philly_flood_amenity_mapping/2-amenity-analysis.html",
+      "/posts/philly_flood_census_mapping/index.html",
+      "/posts/politics_python/python_hw2.html",
+      "/posts/Bike_Boston/Boston_BikeShare.html",
+      "/posts/TOD_Washington_DC/DCTOD.html",
+      "/posts/Bluebonnet/bluebonnet.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/Chicago_Inspections/Chicago_Restaurants.html",
+      "/posts/Bike_Boston/Boston_BikeShare.html",
+      "/posts/TOD_Washington_DC/DCTOD.html",
+      "/posts/FEWS_NET_GDHI/GDHI.html",
+      "/posts/philly_flood_amenity_mapping/2-amenity-analysis.html",
+      "/posts/philly_flood_census_mapping/index.html",
+      "/posts/PA_wind_mapping/PA_Wind.html"
+    ]
+  }
+]

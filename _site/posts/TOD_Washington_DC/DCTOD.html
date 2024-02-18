@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Richard Barad">
+<meta name="dcterms.date" content="2023-10-01">
+
+<title>Analysis of Transit Oriented Development Policies in Washington DC</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+<script src="../../site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../portfolio.html" rel="" target="">
+ <span class="menu-text">Work Samples</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../resume.html" rel="" target="">
+ <span class="menu-text">Resume</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/richard-barad-70b70277/" rel="" target=""><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/richardbarad" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:richard.barad@gmail.com" rel="" target=""><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Analysis of Transit Oriented Development Policies in Washington DC</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">R</div>
+                <div class="quarto-category">Transportation</div>
+                <div class="quarto-category">Census</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Richard Barad </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 1, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#get-census-data" id="toc-get-census-data" class="nav-link" data-scroll-target="#get-census-data">Get Census Data</a></li>
+  <li><a href="#procees-dc-metro-data" id="toc-procees-dc-metro-data" class="nav-link" data-scroll-target="#procees-dc-metro-data">Procees DC Metro Data</a>
+  <ul class="collapse">
+  <li><a href="#buffer-metro-points" id="toc-buffer-metro-points" class="nav-link" data-scroll-target="#buffer-metro-points">Buffer Metro Points</a></li>
+  <li><a href="#get-the-centroids-of-the-census-tracts-and-identify-tod-and-non-tod" id="toc-get-the-centroids-of-the-census-tracts-and-identify-tod-and-non-tod" class="nav-link" data-scroll-target="#get-the-centroids-of-the-census-tracts-and-identify-tod-and-non-tod">Get the centroids of the census tracts and identify TOD and Non-TOD</a></li>
+  </ul></li>
+  <li><a href="#mapping-the-tod-area" id="toc-mapping-the-tod-area" class="nav-link" data-scroll-target="#mapping-the-tod-area">Mapping the TOD Area</a>
+  <ul class="collapse">
+  <li><a href="#mean-annual-income-in-the-tod" id="toc-mean-annual-income-in-the-tod" class="nav-link" data-scroll-target="#mean-annual-income-in-the-tod">Mean Annual Income in the TOD</a></li>
+  <li><a href="#median-rent-in-the-tod" id="toc-median-rent-in-the-tod" class="nav-link" data-scroll-target="#median-rent-in-the-tod">Median Rent in the TOD</a></li>
+  <li><a href="#public-transit-usage-in-the-tod" id="toc-public-transit-usage-in-the-tod" class="nav-link" data-scroll-target="#public-transit-usage-in-the-tod">Public Transit Usage in the TOD</a></li>
+  <li><a href="#public-administration-workers" id="toc-public-administration-workers" class="nav-link" data-scroll-target="#public-administration-workers">Public Administration Workers</a></li>
+  </ul></li>
+  <li><a href="#comparing-indicators-across-time-and-space" id="toc-comparing-indicators-across-time-and-space" class="nav-link" data-scroll-target="#comparing-indicators-across-time-and-space">Comparing Indicators Across Time and Space</a>
+  <ul class="collapse">
+  <li><a href="#charts" id="toc-charts" class="nav-link" data-scroll-target="#charts">Charts</a></li>
+  <li><a href="#table" id="toc-table" class="nav-link" data-scroll-target="#table">Table</a></li>
+  </ul></li>
+  <li><a href="#analysis" id="toc-analysis" class="nav-link" data-scroll-target="#analysis">Analysis</a>
+  <ul class="collapse">
+  <li><a href="#population-map" id="toc-population-map" class="nav-link" data-scroll-target="#population-map">Population Map</a></li>
+  <li><a href="#rent-map" id="toc-rent-map" class="nav-link" data-scroll-target="#rent-map">Rent Map</a></li>
+  </ul></li>
+  <li><a href="#multi-ring-buffer-analysis" id="toc-multi-ring-buffer-analysis" class="nav-link" data-scroll-target="#multi-ring-buffer-analysis">Multi Ring Buffer Analysis</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Transited oriented development (TOD) refers to the trend of creating vibrant, livable communities which are compact, walkable, and centered around transit systems. Washington DC has experienced TOD in many sections of the city with new apartment buildings being constructed near metro stops throughout the city. This memo attempts to look at the impacts of TOD development on income and rent. We will also examine if residents living in the TOD are more likely to commute to work on public transit. We look at the spatial patterns of where workers working in public administration tend to live, and examine if they are more likely to live in neighborhoods near the metro. Data on income, rent, and mode of transportation used for commuting is downloaded from the American Community Survey and we compare data from 2009 to data from 2017.</p>
+<p>The analysis starts by identifying the TOD area. This analysis defines the TOD area as including all census tracts whose center is located within 1/2 a mile of a metro stop.</p>
+<p>This analysis focuses exclusively on metro stops and does not consider bus stops. This is because metro is generally considered faster, more reliable form of public transportation and residents are more likely to be willing to pay more in rent to live near a metro stop. Additionally, transit oriented development in Washington DC has tended occur around metro stops not bus stops.</p>
+</section>
+<section id="get-census-data" class="level1">
+<h1>Get Census Data</h1>
+<p>I start my analysis by downloading the ACS census data for the variables of interest. I download ACS data for both 2009 and 2017 and merge the datasets together into one table.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set ACS Variables</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>acs_variables2017 <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>                   <span class="st">'B25119_001'</span>, <span class="co">#Median Household Income</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>                   <span class="st">'B25058_001'</span>, <span class="co">#Rent</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>                   <span class="st">'B08130_001'</span>, <span class="co">#Total Working Population</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>                   <span class="st">'B08130_016'</span>, <span class="co">#Total Population Commuting on Public Transit</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>                   <span class="st">'B08126_014'</span>, <span class="co">#Public Administration Workforce</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>                   <span class="st">'B01001_001'</span>) <span class="co">#Total Population</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>acs_variables2009 <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="st">'B25119_001'</span>, <span class="co">#Median Household Income</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="st">'B25058_001'</span>, <span class="co">#Rent</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="st">'B08130_001'</span>, <span class="co">#Total Working Population</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="st">'B08130_016'</span>, <span class="co">#Total Population Commuting on Public Transit</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="st">'C24030_028'</span>, <span class="co">#Public Administration Workforce Male</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="st">'C24030_055'</span>, <span class="co">#Public Administration Workforce Female</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="st">'B01001_001'</span>) <span class="co">#Total Population</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">#Download 2009 Census Data</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>dc2009tracts <span class="ot">&lt;-</span> <span class="fu">get_acs</span>(<span class="st">'tract'</span>,</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>                        <span class="at">variables =</span> acs_variables2009,</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>                        <span class="at">year =</span> <span class="dv">2009</span>,</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>                        <span class="at">state =</span> <span class="st">'DC'</span>,</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>                        <span class="at">geometry =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>                        <span class="at">output =</span> <span class="st">'wide'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="st">'median_income'</span><span class="ot">=</span><span class="st">'B25119_001E'</span>,</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>         <span class="st">'median_rent'</span><span class="ot">=</span><span class="st">'B25058_001E'</span>,</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>         <span class="st">'working_pop'</span> <span class="ot">=</span> <span class="st">'B08130_001E'</span>,</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>         <span class="st">'transit_pop'</span> <span class="ot">=</span> <span class="st">'B08130_016E'</span>,</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>         <span class="st">'male_public_pop'</span> <span class="ot">=</span> <span class="st">'C24030_028E'</span>,</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>         <span class="st">'female_public_pop'</span> <span class="ot">=</span> <span class="st">'C24030_055E'</span>,</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>         <span class="st">'total_pop'</span> <span class="ot">=</span> <span class="st">'B01001_001E'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_transform</span>(<span class="st">'EPSG:2248'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="st">'total_pop'</span> <span class="sc">!=</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pct_transit =</span> <span class="fu">round</span>((transit_pop <span class="sc">/</span> working_pop) <span class="sc">*</span> <span class="dv">100</span>,<span class="dv">2</span>),</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>         <span class="at">public_pop =</span> male_public_pop <span class="sc">+</span> female_public_pop,</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>         <span class="at">pct_public =</span> <span class="fu">round</span>((public_pop <span class="sc">/</span> working_pop) <span class="sc">*</span> <span class="dv">100</span>,<span class="dv">2</span>),</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>         <span class="at">median_income =</span> median_income <span class="sc">*</span> <span class="fl">1.14</span>,</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>         <span class="at">median_rent =</span> median_rent <span class="sc">*</span> <span class="fl">1.14</span>,</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>         <span class="at">year =</span> <span class="st">'2009'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="sc">-</span>NAME, <span class="sc">-</span><span class="fu">starts_with</span>(<span class="st">"B0"</span>), <span class="sc">-</span><span class="fu">starts_with</span>(<span class="st">"B1"</span>), <span class="sc">-</span><span class="fu">starts_with</span>(<span class="st">"B2"</span>),<span class="sc">-</span><span class="fu">starts_with</span>(<span class="st">"C2"</span>), <span class="sc">-</span>male_public_pop, <span class="sc">-</span>female_public_pop)</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="co">#Download 2017 Census Data</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>dc2017tracts <span class="ot">&lt;-</span> <span class="fu">get_acs</span>(<span class="st">'tract'</span>,</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>                        <span class="at">variables =</span> acs_variables2017,</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>                        <span class="at">year =</span> <span class="dv">2017</span>,</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>                        <span class="at">state =</span> <span class="st">'DC'</span>,</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>                        <span class="at">geometry =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>                        <span class="at">output =</span> <span class="st">'wide'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="st">'median_income'</span><span class="ot">=</span><span class="st">'B25119_001E'</span>,</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>         <span class="st">'median_rent'</span><span class="ot">=</span><span class="st">'B25058_001E'</span>,</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>         <span class="st">'working_pop'</span> <span class="ot">=</span> <span class="st">'B08130_001E'</span>,</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>         <span class="st">'transit_pop'</span> <span class="ot">=</span> <span class="st">'B08130_016E'</span>,</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>         <span class="st">'public_pop'</span> <span class="ot">=</span> <span class="st">'B08126_014E'</span>,</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>         <span class="st">'total_pop'</span> <span class="ot">=</span> <span class="st">'B01001_001E'</span>,) <span class="sc">%&gt;%</span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_transform</span>(<span class="st">'EPSG:2248'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="st">'total_pop'</span> <span class="sc">!=</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pct_transit =</span> <span class="fu">round</span>((transit_pop <span class="sc">/</span> working_pop) <span class="sc">*</span> <span class="dv">100</span>,<span class="dv">2</span>),</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>         <span class="at">pct_public =</span> <span class="fu">round</span>((public_pop <span class="sc">/</span> working_pop) <span class="sc">*</span> <span class="dv">100</span>,<span class="dv">2</span>),</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>         <span class="at">year =</span> <span class="st">'2017'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="sc">-</span>NAME, <span class="sc">-</span><span class="fu">starts_with</span>(<span class="st">"B0"</span>), <span class="sc">-</span><span class="fu">starts_with</span>(<span class="st">"B1"</span>), <span class="sc">-</span><span class="fu">starts_with</span>(<span class="st">"B2"</span>))</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="co">#Bind all data together</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>all_census_data <span class="ot">=</span> <span class="fu">rbind</span>(dc2017tracts,dc2009tracts)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+<section id="procees-dc-metro-data" class="level1">
+<h1>Procees DC Metro Data</h1>
+<p>Next I download the metro station data from the Washington DC open data portal. I remove all metro stops which are not located within the Washington DC district boundaries.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dc_boundary <span class="ot">&lt;-</span> <span class="fu">st_union</span>(dc2017tracts) <span class="co">#Create union of all census tracts in DC</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>dcmetro <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="st">'https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Transportation_Rail_Bus_WebMercator/MapServer/51/query?outFields=*&amp;where=1%3D1&amp;f=geojson'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_transform</span>(<span class="st">'EPSG:2248'</span>) <span class="co">#Download DC Metro points and set projection</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>dcmetro <span class="ot">&lt;-</span> dcmetro[<span class="fu">st_intersects</span>(dcmetro, dc_boundary) <span class="sc">%&gt;%</span> lengths <span class="sc">&gt;</span> <span class="dv">0</span>, ] <span class="co">#Intersect DC metro points with DC boundary</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<section id="buffer-metro-points" class="level2">
+<h2 class="anchored" data-anchor-id="buffer-metro-points">Buffer Metro Points</h2>
+<p>I create a one mile buffer around the dc metro points.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>metro_buffer <span class="ot">&lt;-</span> <span class="fu">st_buffer</span>(dcmetro,<span class="dv">2640</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>metro_union_buffer <span class="ot">&lt;-</span> <span class="fu">st_union</span>(metro_buffer)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+<section id="get-the-centroids-of-the-census-tracts-and-identify-tod-and-non-tod" class="level2">
+<h2 class="anchored" data-anchor-id="get-the-centroids-of-the-census-tracts-and-identify-tod-and-non-tod">Get the centroids of the census tracts and identify TOD and Non-TOD</h2>
+<p>I get the centroid of the census tracts and determine which census tract centroids are located within the TOD area. Census tracts which have a centroid within the TOD area are considered to be part of the TOD area.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>centroids <span class="ot">&lt;-</span> <span class="fu">st_centroid</span>(all_census_data)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>tod <span class="ot">&lt;-</span> centroids[<span class="fu">st_intersects</span>(centroids,metro_union_buffer) <span class="sc">%&gt;%</span> lengths <span class="sc">&gt;</span> <span class="dv">0</span>, ] <span class="sc">%&gt;%</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_drop_geometry</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(all_census_data) <span class="sc">%&gt;%</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_sf</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">type=</span><span class="st">'tod'</span>)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>non_tod <span class="ot">&lt;-</span> centroids[<span class="fu">st_disjoint</span>(centroids,metro_union_buffer) <span class="sc">%&gt;%</span> lengths <span class="sc">&gt;</span> <span class="dv">0</span>, ] <span class="sc">%&gt;%</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_drop_geometry</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(all_census_data) <span class="sc">%&gt;%</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_sf</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">type=</span><span class="st">'non-TOD'</span>)</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>all_census_data <span class="ot">&lt;-</span> <span class="fu">rbind</span>(tod, non_tod)</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>tod_dissolve <span class="ot">&lt;-</span> <span class="fu">st_union</span>(tod)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>dcmetro<span class="sc">$</span>tod_change[dcmetro<span class="sc">$</span>NAME <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Columbia Heights"</span>,<span class="st">"Georgia Ave-Petworth"</span>,<span class="st">"Brookland-CUA"</span>,<span class="st">"NoMa-Gallaudet U"</span>)] <span class="ot">&lt;-</span> <span class="st">'Yes'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+</section>
+<section id="mapping-the-tod-area" class="level1">
+<h1>Mapping the TOD Area</h1>
+<p>The map below shows the census tracts included in the TOD area. All census tracts which are not part of the TOD area are shown in green - these census tracts will be refereed to as the non-TOD area.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>()<span class="sc">+</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> all_census_data, <span class="fu">aes</span>(<span class="at">fill =</span> type))<span class="sc">+</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> dcwater,<span class="at">fill=</span><span class="st">'#5ee4ff'</span>,<span class="at">color=</span><span class="cn">NA</span>)<span class="sc">+</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> dcmetro,<span class="at">size=</span><span class="fl">1.3</span>)<span class="sc">+</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Map of TOD and Non-TOD Areas"</span>)<span class="sc">+</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">'#9effa9'</span>,<span class="st">'red'</span>),</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>                    <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">'Non-TOD'</span>,<span class="st">'TOD'</span>))<span class="sc">+</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>year)<span class="sc">+</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mapTheme</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="DCTOD_files/figure-html/make_tod_map-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<section id="mean-annual-income-in-the-tod" class="level2">
+<h2 class="anchored" data-anchor-id="mean-annual-income-in-the-tod">Mean Annual Income in the TOD</h2>
+<p>The maps below show the mean annual income by census tract in 2009 and 2019 - the TOD area is indicated by the red outline and metro stops are shown as black dots. The 2009 data is adjusted for inflation, and income data is presented using the value of the dollar in 2017. Income in Washington DC is generally highest in the Northwestern areas of Washington DC, while census tracts West of the Anacostia river have the lowest annual income. Annual income has increased in several census tracts located within the TOD. Metro stops where there is a notable increase in income in the census tracts surrounding the metro stop are visualized in the map as larger dots. Areas of the TOD where we observe a large increase in income levels from 2009 to 2017 include census tracts near the Columbia Heights and Petworth metro stops on the green metro line, and tracts located near the Brookland and NOMA metro stops on the red line.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>all_census_data <span class="ot">&lt;-</span> all_census_data <span class="sc">%&gt;%</span> </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">income_class =</span> <span class="fu">cut</span>(median_income, <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">25000</span>, <span class="dv">50000</span>, <span class="dv">75000</span>, <span class="dv">100000</span>, <span class="fu">max</span>(all_census_data<span class="sc">$</span>median_income, <span class="at">na.rm=</span><span class="cn">TRUE</span>))))</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>()<span class="sc">+</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> all_census_data,<span class="at">linewidth=</span><span class="fl">0.1</span>,<span class="at">color=</span><span class="st">'grey70'</span>,<span class="fu">aes</span>(<span class="at">fill =</span> income_class))<span class="sc">+</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> dcwater,<span class="at">fill=</span><span class="st">'#5ee4ff'</span>,<span class="at">color=</span><span class="cn">NA</span>)<span class="sc">+</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> tod_dissolve,<span class="at">fill=</span><span class="st">'transparent'</span>,<span class="at">color=</span><span class="st">'red'</span>,<span class="at">linewidth=</span><span class="dv">1</span>)<span class="sc">+</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> dcmetro,<span class="at">size=</span><span class="fl">1.3</span>)<span class="sc">+</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> dcmetro <span class="sc">%&gt;%</span> <span class="fu">filter</span>(tod_change <span class="sc">==</span> <span class="st">'Yes'</span>),<span class="at">size=</span><span class="dv">3</span>,<span class="at">fill=</span><span class="st">'gray50'</span>)<span class="sc">+</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">'Median Annual Income'</span>)<span class="sc">+</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>year)<span class="sc">+</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> palette5,</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>                    <span class="at">name =</span> <span class="st">"Income (USD)"</span>,</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>                    <span class="at">na.value =</span> <span class="st">'grey80'</span>,</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>                    <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">'0 - 25,000'</span>,<span class="st">'25,001 - 50,000'</span>,<span class="st">'50,001 - 75,000'</span>,<span class="st">'75,0001 - 100,000'</span>, <span class="st">'&gt;100,000'</span>,<span class="st">'No Data'</span>))<span class="sc">+</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mapTheme</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="DCTOD_files/figure-html/make_income_map-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="median-rent-in-the-tod" class="level2">
+<h2 class="anchored" data-anchor-id="median-rent-in-the-tod">Median Rent in the TOD</h2>
+<p>The maps below show the median monthly rent by census tract in 2009 and 2017. As in the previous map, the TOD area is shown by a red outline and metro stops are shown as black dots. Rent has increased sharply in many neighborhoods in Washington DC from 2009 to 2017. The 2009 map has been adjusted for inflation, and all data is represented using the value of a dollar in 2017. Rent has increased from 2009 to 2017 in several areas of Washington DC - some of the largest increases in rent have occurred in neighborhoods located in the TOD area. Notably, the census tracts located near the Columbia Heights, Petworth, Brookland, Fort Totten, and Takoma metro stops have all experienced increases in rent - in these neighborhoods residents appear to be willing to pay more in rent to live near the metro. However, the pattern of rising rents in the TOD area is not present in all parts of the city, residents living east of the Anacostia river continue to have some of the lowest rents in Washington DC. The cost of rent east of the Anacostia is similar in the TOD and non-TOD areas.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>all_census_data <span class="ot">&lt;-</span> all_census_data <span class="sc">%&gt;%</span> </span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rent_class =</span> <span class="fu">cut</span>(median_rent, <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">500</span>, <span class="dv">1000</span>, <span class="dv">1500</span>, <span class="dv">2000</span>, <span class="fu">max</span>(all_census_data<span class="sc">$</span>median_rent, <span class="at">na.rm=</span><span class="cn">TRUE</span>))))</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>()<span class="sc">+</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> all_census_data,<span class="at">linewidth=</span><span class="fl">0.1</span>,<span class="at">color=</span><span class="st">'grey70'</span>,<span class="fu">aes</span>(<span class="at">fill =</span> rent_class))<span class="sc">+</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> dcwater,<span class="at">fill=</span><span class="st">'#5ee4ff'</span>,<span class="at">color=</span><span class="cn">NA</span>)<span class="sc">+</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> tod_dissolve,<span class="at">fill=</span><span class="st">'transparent'</span>,<span class="at">color=</span><span class="st">'red'</span>,<span class="at">linewidth=</span><span class="dv">1</span>)<span class="sc">+</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> dcmetro,<span class="at">size=</span><span class="fl">1.3</span>)<span class="sc">+</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Median Monthly Rent"</span>)<span class="sc">+</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>year)<span class="sc">+</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> palette5,</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>                    <span class="at">name =</span> <span class="st">"Rent (USD)"</span>,</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>                    <span class="at">na.value =</span> <span class="st">'grey80'</span>,</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>                    <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">'&lt;=500'</span>,<span class="st">'501 - 1,000'</span>,<span class="st">'1,001 - 1,500'</span>,<span class="st">'1,501 - 2,000'</span>, <span class="st">'&gt;2,000'</span>))<span class="sc">+</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mapTheme</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="DCTOD_files/figure-html/make_rent_map-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="public-transit-usage-in-the-tod" class="level2">
+<h2 class="anchored" data-anchor-id="public-transit-usage-in-the-tod">Public Transit Usage in the TOD</h2>
+<p>These maps show the percent of workers using any form of public transit to commute to work in 2009 and 2017. As in the previous maps, TOD area is shown by the red line and metro stops are presented as block dots. The percentage of workers commuting to work on public transit is higher in the TOD area. The may be partially attributed to the faster speed and greater reliability of metro compared to the bus. Residents who have the ability to live in desirable areas with high rent and want to commute by public transit appear to be choosing to live near metro stops. For instance, areas with high rents along the green line and both branches of the red line also have a high percentage of residents commuting to work on public transit.</p>
+<p>Metro stops in the downtown corridor do not have a high percentage of the population living near the metro stops commuting to work on public transit. This may be because residents who live downtown are likely to also work downtown and live close enough to their workplace to walk to work. However, additional analysis is needed to confirm this hypothesis. In areas with high income which are also located outside of the TOD-area residents are not likely to commute to work on public transit.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>all_census_data <span class="ot">&lt;-</span> all_census_data <span class="sc">%&gt;%</span> </span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">transit_class =</span> <span class="fu">cut</span>(pct_transit, <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">20</span>, <span class="dv">30</span>, <span class="dv">40</span>, <span class="dv">50</span>, <span class="fu">max</span>(all_census_data<span class="sc">$</span>pct_transit, <span class="at">na.rm=</span><span class="cn">TRUE</span>))))</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>()<span class="sc">+</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> all_census_data,<span class="at">linewidth=</span><span class="fl">0.1</span>,<span class="at">color=</span><span class="st">'grey70'</span>,<span class="fu">aes</span>(<span class="at">fill =</span> transit_class))<span class="sc">+</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> dcwater,<span class="at">fill=</span><span class="st">'#5ee4ff'</span>,<span class="at">color=</span><span class="cn">NA</span>)<span class="sc">+</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> tod_dissolve,<span class="at">fill=</span><span class="st">'transparent'</span>,<span class="at">color=</span><span class="st">'red'</span>,<span class="at">linewidth=</span><span class="dv">1</span>)<span class="sc">+</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> dcmetro,<span class="at">size=</span><span class="fl">1.3</span>)<span class="sc">+</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Percent of Workers Commuting on Public Transit"</span>)<span class="sc">+</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>year)<span class="sc">+</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> palette5,</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>                    <span class="at">name =</span> <span class="st">"Percent"</span>,</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>                    <span class="at">na.value =</span> <span class="st">'grey80'</span>,</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>                    <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">'&lt;=20%'</span>,<span class="st">'21 - 30%'</span>,<span class="st">'31 - 40%'</span>,<span class="st">'41 - 50%'</span>, <span class="st">'&gt;50%'</span>))<span class="sc">+</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mapTheme</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="DCTOD_files/figure-html/make_transit_usage_map-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="public-administration-workers" class="level2">
+<h2 class="anchored" data-anchor-id="public-administration-workers">Public Administration Workers</h2>
+<p>Public sector jobs represent a large employment sector in the DMV area, accounting for 15 percent of jobs. Public administration works tend to have higher incomes than workers in the service industry, but lower incomes than employees working in office jobs in the private sector. Federal employees also receive a commuter benefit which can offset the cost of commuting to work on public transit. Looking at where public administrative workers are living can help us determine if federal workers are using this benefit.</p>
+<p>Federal workers appear to be choosing to live within the TOD area in close proximity to metro - federal commuter benefits may be contributing to this choice. Additionally, the percentage of federal workers living in the downtown corridor has declined from 2009 to 2017. As shown in previous maps, the downtown corridor has some of the highest rents in the city and public administration workers may be getting priced out of these areas as rent continues to increase. Conversely, the percentage of federal workers living near the Brookland, NOMA, and Fort Totten metro stops has increased in 2017 compared to 2009. As shown in the income and rent maps, these neighborhoods have experienced increases in rent and average income level, but rent remains lower than the most expensive parts of the city. These recently developed areas are suitable for public administration workers because the neighborhoods are desirable and provide easy access to public transit while still being affordable to middle income residents such as public administration workers.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>all_census_data <span class="ot">&lt;-</span> all_census_data <span class="sc">%&gt;%</span> </span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">public_class =</span> <span class="fu">cut</span>(pct_public, <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">10</span>, <span class="dv">15</span>, <span class="dv">20</span>, <span class="dv">25</span>, <span class="fu">max</span>(all_census_data<span class="sc">$</span>pct_public, <span class="at">na.rm=</span><span class="cn">TRUE</span>))))</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>()<span class="sc">+</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> all_census_data,<span class="at">linewidth=</span><span class="fl">0.1</span>,<span class="at">color=</span><span class="st">'grey70'</span>,<span class="fu">aes</span>(<span class="at">fill =</span> public_class))<span class="sc">+</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> dcwater,<span class="at">fill=</span><span class="st">'#5ee4ff'</span>,<span class="at">color=</span><span class="cn">NA</span>)<span class="sc">+</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> tod_dissolve,<span class="at">fill=</span><span class="st">'transparent'</span>,<span class="at">color=</span><span class="st">'red'</span>,<span class="at">linewidth=</span><span class="dv">1</span>)<span class="sc">+</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> dcmetro,<span class="at">size=</span><span class="fl">1.3</span>)<span class="sc">+</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Percent of Workers in Public Adminstration"</span>)<span class="sc">+</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>year)<span class="sc">+</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> palette5,</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>                    <span class="at">name =</span> <span class="st">"Percent"</span>,</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>                    <span class="at">na.value =</span> <span class="st">'grey80'</span>,</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>                    <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">'&lt;=10%'</span>,<span class="st">'11 - 15%'</span>,<span class="st">'16 - 20%'</span>,<span class="st">'21 - 25%'</span>, <span class="st">'&gt;25%'</span>))<span class="sc">+</span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mapTheme</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="DCTOD_files/figure-html/make_publicadmin_map-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="comparing-indicators-across-time-and-space" class="level1">
+<h1>Comparing Indicators Across Time and Space</h1>
+<p>This section presents data on our four indicators of interest summarized across time and space for tod and non-tod areas.</p>
+<section id="charts" class="level2">
+<h2 class="anchored" data-anchor-id="charts">Charts</h2>
+<p>The charts below show the annual income, monthly rent, percent of workers commuting to work on public transit, and the percent of workers working public administration. For all indicators, the charts display the average value for census tracts in the TOD and the average value for census tracts in the Non-TOD areas in 2009 and 2017. Notably, the mean rent in TOD and non-TOD areas was similar in 2009. By 2017, the difference in rent between TOD and non-TOD had increased dramatically. The same patterns have also occurred when looking at annual income, with the gap in income between TOD and non-TOD areas increasing between 2009 and 2017.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>census_data_summary <span class="ot">&lt;-</span> </span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_drop_geometry</span>(all_census_data) <span class="sc">%&gt;%</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(year, type) <span class="sc">%&gt;%</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">median_income =</span> <span class="fu">round</span>(<span class="fu">mean</span>(median_income, <span class="at">na.rm =</span> T),<span class="dv">2</span>),</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">median_rent =</span> <span class="fu">round</span>(<span class="fu">mean</span>(median_rent, <span class="at">na.rm =</span> T),<span class="dv">2</span>),</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">percent_transit =</span> <span class="fu">round</span>(<span class="fu">mean</span>(pct_transit, <span class="at">na.rm =</span> T),<span class="dv">0</span>),</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">percent_public =</span> <span class="fu">round</span>(<span class="fu">mean</span>(pct_public, <span class="at">na.rm =</span> T),<span class="dv">0</span>))</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>census_data_summary <span class="sc">%&gt;%</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gather</span>(Variable, Value, <span class="sc">-</span>year, <span class="sc">-</span>type) <span class="sc">%&gt;%</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(year, Value, <span class="at">fill =</span> type)) <span class="sc">+</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position =</span> <span class="st">"dodge"</span>) <span class="sc">+</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>Variable, <span class="at">scales =</span> <span class="st">"free_y"</span>, <span class="at">ncol=</span><span class="dv">4</span>, <span class="at">strip.position =</span> <span class="st">'left'</span>,</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>             <span class="at">labeller =</span> <span class="fu">as_labeller</span>(<span class="fu">c</span>(<span class="at">median_income =</span> <span class="st">'Mean Annual Income (USD)'</span>,<span class="at">median_rent =</span> <span class="st">'Mean Monthly Rent (USD)'</span>,<span class="at">percent_transit=</span><span class="st">'% Commuting on Public Transit'</span>,<span class="at">percent_public=</span><span class="st">'% of Workers in Public Admin.'</span>))) <span class="sc">+</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"#bae4bc"</span>, <span class="st">"#0868ac"</span>)) <span class="sc">+</span></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Indicator differences across time and space"</span>) <span class="sc">+</span></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="cn">NULL</span>) <span class="sc">+</span></span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">'Year'</span>)<span class="sc">+</span></span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="cf">function</span>(x) <span class="fu">format</span>(x, <span class="at">big.mark =</span> <span class="st">","</span>,<span class="at">scientific =</span> <span class="cn">FALSE</span>))<span class="sc">+</span></span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">strip.background =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>           <span class="at">strip.placement =</span> <span class="st">"outside"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="DCTOD_files/figure-html/bar_plot-1.png" class="img-fluid" width="768"></p>
+</div>
+</div>
+</section>
+<section id="table" class="level2">
+<h2 class="anchored" data-anchor-id="table">Table</h2>
+<p>Both rent and income have increased sharply in TOD areas from 2009 and 2017. As shown in the table below the difference in mean income between TOD and non-TOD areas was only 1,548 USD in 2009 - by 2017 the difference had increased to 16,085 USD, indicating an increase of over <strong>900%</strong>. Similar trends are present for rent where the difference in monthly rent between TOD and non-TOD areas in 2009 was only 58 USD. By 2017 the difference had increased to 252 USD, an increase of <strong>334%</strong>.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>census_data_summary <span class="sc">%&gt;%</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="at">booktabs =</span> <span class="cn">TRUE</span>,<span class="at">col.name =</span> <span class="fu">c</span>(<span class="st">'Year'</span>,<span class="st">'Type'</span>,<span class="st">'Mean Income (USD)'</span>,<span class="st">'Mean Rent (USD)'</span>,<span class="st">'Mean % Commuting on Transit'</span>,<span class="st">'Mean % Public Workers'</span>), <span class="at">align=</span><span class="st">'c'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: center;" data-quarto-table-cell-role="th">Year</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Type</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Mean Income (USD)</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Mean Rent (USD)</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Mean % Commuting on Transit</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Mean % Public Workers</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">2009</td>
+<td style="text-align: center;">non-TOD</td>
+<td style="text-align: center;">70678.70</td>
+<td style="text-align: center;">1037.85</td>
+<td style="text-align: center;">35</td>
+<td style="text-align: center;">16</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2009</td>
+<td style="text-align: center;">tod</td>
+<td style="text-align: center;">72443.08</td>
+<td style="text-align: center;">1103.85</td>
+<td style="text-align: center;">39</td>
+<td style="text-align: center;">17</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2017</td>
+<td style="text-align: center;">non-TOD</td>
+<td style="text-align: center;">76393.21</td>
+<td style="text-align: center;">1285.75</td>
+<td style="text-align: center;">33</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2017</td>
+<td style="text-align: center;">tod</td>
+<td style="text-align: center;">92478.31</td>
+<td style="text-align: center;">1537.99</td>
+<td style="text-align: center;">39</td>
+<td style="text-align: center;">17</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+</section>
+</section>
+<section id="analysis" class="level1">
+<h1>Analysis</h1>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Spatially join centroid of census tracts to buffers around metro stops and sum total population within 1/2 milf of buffer</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>metro_pop <span class="ot">&lt;-</span> <span class="fu">st_join</span>(metro_buffer,centroids <span class="sc">%&gt;%</span> dplyr<span class="sc">::</span><span class="fu">select</span>(GEOID,year,total_pop,median_rent)) <span class="sc">%&gt;%</span>  </span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(NAME,year) <span class="sc">%&gt;%</span> <span class="fu">summarize</span>(<span class="at">Population =</span> <span class="fu">sum</span>(total_pop),<span class="at">Rent=</span><span class="fu">mean</span>(median_rent, <span class="at">na.rm=</span><span class="cn">TRUE</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_drop_geometry</span>() </span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>dcmetro <span class="ot">&lt;-</span> <span class="fu">inner_join</span>(dcmetro,metro_pop,<span class="at">by=</span><span class="st">'NAME'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<section id="population-map" class="level2">
+<h2 class="anchored" data-anchor-id="population-map">Population Map</h2>
+<p>The map below shows the population living in the TOD area surrounding each metro stop - a larger bubble indicates a larger population living in the census tracts which form the TOD area surrounding the metro stop. The population living near metro stops is high in the urban downtown core of the city where large apartment buildings that house more people tend to dominate the housing landscape. In areas on the periphery of the city single family homes tend to be the main form of housing - as a result fewer residents live within the TOD at the edges of the city.</p>
+<p>The areas surrounding metro stops have experienced population growth in many parts of Washington DC. This growth is most notable around the U street, Shaw, and Columbia Heights metro stops on the green line and is likely a result of new apartment buildings being developed around metro stops as part of a TOD development strategy.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>()<span class="sc">+</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> all_census_data,<span class="at">linewidth=</span><span class="fl">0.3</span>,<span class="at">color=</span><span class="st">'#bcbcbc'</span>,<span class="at">fill=</span><span class="st">'#eaeaea'</span>)<span class="sc">+</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> dcwater,<span class="at">fill=</span><span class="st">'#5ee4ff'</span>,<span class="at">color=</span><span class="cn">NA</span>)<span class="sc">+</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> tod_dissolve,<span class="at">fill=</span><span class="st">'transparent'</span>,<span class="at">color=</span><span class="st">'red'</span>,<span class="at">linewidth=</span><span class="fl">0.5</span>)<span class="sc">+</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> dcmetro, <span class="at">color=</span><span class="st">'blue'</span>, <span class="fu">aes</span>(<span class="at">size=</span>Population))<span class="sc">+</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Population Living in Within Half Mile of Metro Stop"</span>)<span class="sc">+</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_size</span>(<span class="at">range =</span> <span class="fu">c</span>(<span class="fl">0.1</span>, <span class="dv">4</span>))<span class="sc">+</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">name=</span><span class="st">'Population'</span>)<span class="sc">+</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mapTheme</span>()<span class="sc">+</span></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>year)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="DCTOD_files/figure-html/make_pop_bubble_map-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="rent-map" class="level2">
+<h2 class="anchored" data-anchor-id="rent-map">Rent Map</h2>
+<p>The increase in population around the Columbia Heights, Petworth, U Street, and Shaw metro stops has been accompanied by a dramatic increase in rent. Rent in the census tract around the Shaw metro stop doubled from 2009 to 2017. Similar trends are present in the TOD surrounding other metro stop such as Brookland, Fort Totten, and Petworth which experienced rent increases of 41%, 81% and 58%. Rent in TOD areas East Of Anacostia river have also increases, but by much smaller percentages. Rent in census tracts bordering the Congress Heights metro stop increased by just 7% while rent in census tracts around the Anacostia metro stop increased by 20%.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>()<span class="sc">+</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> all_census_data,<span class="at">linewidth=</span><span class="fl">0.3</span>,<span class="at">color=</span><span class="st">'#bcbcbc'</span>,<span class="at">fill=</span><span class="st">'#eaeaea'</span>)<span class="sc">+</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> dcwater,<span class="at">fill=</span><span class="st">'#5ee4ff'</span>,<span class="at">color=</span><span class="cn">NA</span>)<span class="sc">+</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> tod_dissolve,<span class="at">fill=</span><span class="st">'transparent'</span>,<span class="at">color=</span><span class="st">'red'</span>,<span class="at">linewidth=</span><span class="fl">0.5</span>)<span class="sc">+</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> dcmetro, <span class="at">color=</span><span class="st">'blue'</span>, <span class="fu">aes</span>(<span class="at">size=</span>Rent))<span class="sc">+</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Median Rent Within a Half Mile of Metro Stop"</span>)<span class="sc">+</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_size</span>(<span class="at">range =</span> <span class="fu">c</span>(<span class="fl">0.01</span>, <span class="dv">3</span>))<span class="sc">+</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mapTheme</span>()<span class="sc">+</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>year)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="DCTOD_files/figure-html/make_rent_bubble_map-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="multi-ring-buffer-analysis" class="level1">
+<h1>Multi Ring Buffer Analysis</h1>
+<p>This chart below shows the mean monthly rent by census tract based on the tracts distance to the nearest metro stop. Looking at the pattern of 2017 line we can observe that census tracts located closer to the metro have a higher mean rent. The point which breaks this pattern is the data point for census tracts located 2.01 - 2.50miles from the metro - this is because this group of tracts includes several census tracts in Northwest DC which have very high rent levels, these high rents pre-date the construction of metro. If we compare the 2009 line to the 2017 line we can again observe a widening of the difference in rent between between areas near the metro and those far away from metro.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>allTracts_17 <span class="ot">&lt;-</span> all_census_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2017</span>)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>allTracts_09 <span class="ot">&lt;-</span> all_census_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2009</span>)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>MRB <span class="ot">&lt;-</span> <span class="fu">multipleRingBuffer</span>(<span class="fu">st_union</span>(dcmetro), <span class="dv">2640</span><span class="sc">*</span><span class="dv">10</span>, <span class="dv">2640</span>)</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>rings_17 <span class="ot">&lt;-</span> <span class="fu">st_join</span>(<span class="fu">st_centroid</span>(allTracts_17), MRB, <span class="at">join =</span> st_intersects) <span class="sc">%&gt;%</span> </span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>            <span class="fu">st_drop_geometry</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>            <span class="fu">select</span>(<span class="st">'GEOID'</span>,<span class="st">'distance'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>            <span class="fu">left_join</span>(allTracts_17, <span class="at">by =</span> <span class="st">"GEOID"</span>) <span class="sc">%&gt;%</span>   </span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>            <span class="fu">mutate</span>(<span class="at">distance_miles =</span> distance <span class="sc">/</span> <span class="dv">5280</span>) <span class="sc">%&gt;%</span>            </span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>            <span class="fu">st_sf</span>()</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>rings_09 <span class="ot">&lt;-</span> <span class="fu">st_join</span>(<span class="fu">st_centroid</span>(allTracts_09), MRB, <span class="at">join =</span> st_intersects) <span class="sc">%&gt;%</span>  </span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>            <span class="fu">st_drop_geometry</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>            <span class="fu">select</span>(<span class="st">'GEOID'</span>,<span class="st">'distance'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>            <span class="fu">left_join</span>(allTracts_09, <span class="at">by =</span> <span class="st">"GEOID"</span>) <span class="sc">%&gt;%</span>            </span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>            <span class="fu">mutate</span>(<span class="at">distance_miles =</span> distance <span class="sc">/</span> <span class="dv">5280</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>            <span class="fu">st_sf</span>()</span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>rings <span class="ot">&lt;-</span> <span class="fu">rbind</span>(rings_17, rings_09) </span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>rings <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(rings, distance_miles <span class="sc">!=</span> <span class="fl">3.5</span>)</span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>  <span class="co">#add line tod vs non tod and how many houses there are tod vs non tod</span></span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> rings, <span class="fu">aes</span>(<span class="at">x =</span> distance_miles, <span class="at">y =</span> median_rent, <span class="at">color =</span> year), <span class="at">stat =</span> <span class="st">"summary"</span>, <span class="at">fun =</span> mean,<span class="at">linewidth=</span><span class="fl">1.3</span>)<span class="sc">+</span></span>
+<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> rings, <span class="fu">aes</span>(<span class="at">x=</span> distance_miles, <span class="at">y=</span> median_rent, <span class="at">color=</span> year), <span class="at">stat =</span> <span class="st">"summary"</span>, <span class="at">fun =</span> mean, <span class="at">size=</span><span class="dv">3</span>)<span class="sc">+</span></span>
+<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">0</span>,<span class="dv">2000</span>)<span class="sc">+</span></span>
+<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlim</span>(<span class="fl">0.5</span>,<span class="fl">2.5</span>)<span class="sc">+</span></span>
+<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">'Rent as a function of distance to metro stops'</span>)<span class="sc">+</span></span>
+<span id="cb15-30"><a href="#cb15-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">c</span>(<span class="fl">0.5</span>,<span class="dv">1</span>,<span class="fl">1.5</span>,<span class="dv">2</span>,<span class="fl">2.5</span>),</span>
+<span id="cb15-31"><a href="#cb15-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> <span class="fu">paste0</span>(<span class="fu">c</span>(<span class="st">"0m-0.5m"</span>, <span class="st">"0.51m - 1.0m"</span>, <span class="st">"1.01m - 1.50m"</span>, <span class="st">"1.51m - 2.00m"</span>, <span class="st">"2.01m - 2.50m"</span>)))<span class="sc">+</span></span>
+<span id="cb15-32"><a href="#cb15-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">'Distance in miles'</span>)<span class="sc">+</span></span>
+<span id="cb15-33"><a href="#cb15-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">'Mean Monthly rent (USD)'</span>)<span class="sc">+</span></span>
+<span id="cb15-34"><a href="#cb15-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="DCTOD_files/figure-html/multi_ring_buffer-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>The analysis above highlights the impact that Transit Oriented Development strategies have had on the Washington DC landscape. From 2009 to 2017, there has been a rapid increase in the construction of new apartment buildings around many metro stops in Washington DC. This pattern of new construction near metro stops has been most prominent around the Petworth, Shaw, Columbia Heights, Brookland, and U-Street metro stops. This new construction has occurred alongside rapidly rising rents and an increase in the mean income levels of residents living in the TOD area. Areas in the TOD provide easy access to downtown offices and residents living in the TOD area are more likely to commute to work on public transit. Neighborhoods located in the TOD are popular with middle class residents such as public administration workers and provide residents with housing that is cheaper relative to prices in downtown Washington DC which has some of the highest rent levels in the city.</p>
+<p>A notable exception to the trend is of rising rent prices in the TOD is in the section of the TOD area which is located east of the Anacasotia. In this portion of the TOD-area census tracts have experienced minimal changes in rent from 2009 to 2017 despite large increases in other sections of the TOD. The neighborhoods east of the Anacostia are dominated by African american residents and the annual income in census tracts east of the Anacostia are the lowest in the city. Prior to 2017, the development of new apartments around metro stops has taken place mostly west of the Anacostia river. However, there are currently several new projects planned east of the Anacostia, including a <a href="https://www.bisnow.com/washington-dc/news/multifamily/dc-selects-development-team-to-build-134-unit-anacostia-project-117848">134 unit apartment complex at 1234 Good Hope Road</a> which is located near the Ancostia metro. As new construction expands across the river, it will be important for developers and city counsel to try to keep rent prices similar to current level. If rent east of the Anacostia increases rapidly like it did in other areas of the TOD area there is a high risk of long term residents getting displaced.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

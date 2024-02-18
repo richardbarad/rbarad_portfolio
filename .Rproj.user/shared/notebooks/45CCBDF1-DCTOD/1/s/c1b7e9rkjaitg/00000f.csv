@@ -1,0 +1,3 @@
+"0","census_data_summary %>%"
+"0","kable(booktabs = TRUE,col.name = c('Year','Type','Mean Income (USD)','Mean Rent (USD)','Mean % Commuting on Transit','Mean % Public Workers'), align='c') %>%"
+"0","  kable_styling()"

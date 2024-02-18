@@ -1,0 +1,6 @@
+"0","all_data <- dplyr::filter(all_data,week >= 26)"
+"0",""
+"0","training <- dplyr::filter(all_data, week <= 28)"
+"0",""
+"0","test <- dplyr::filter(all_data, week > 28)"
+"0",""

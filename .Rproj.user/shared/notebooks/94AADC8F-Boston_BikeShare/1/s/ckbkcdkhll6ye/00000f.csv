@@ -1,0 +1,5 @@
+"0",""
+"0","bike_data <- bike_data %>% st_as_sf(coords = c('Longitude','Latitude'),crs='EPSG:4326') %>% st_transform(2249) %>%"
+"0","  st_join(.,BostonCensus,join=st_intersects,left = TRUE) %>%"
+"0","  filter(District != 'Salem' & Name != 'BCBS Hingham')"
+"0",""

@@ -1,0 +1,8 @@
+"0",""
+"0","#Spatially join centroid of census tracts to buffers around metro stops and sum total population within 1/2 milf of buffer"
+"0",""
+"0","metro_pop <- st_join(metro_buffer,centroids %>% dplyr::select(GEOID,year,total_pop,median_rent)) %>%  "
+"0","  group_by(NAME,year) %>% summarize(Population = sum(total_pop),Rent=mean(median_rent, na.rm=TRUE)) %>%"
+"0","  st_drop_geometry() "
+"0",""
+"0","dcmetro <- inner_join(dcmetro,metro_pop,by='NAME')"
