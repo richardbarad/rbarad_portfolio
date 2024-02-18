@@ -33,6 +33,8 @@ listing:
       - "posts/philly_flood_amenity_mapping/2-amenity-analysis.ipynb"
       - "posts/philly_flood_census_mapping/index.ipynb"
       - "posts/FEWS_NET_GDHI/GDHI.qmd"
+      - "posts/Bluebonnet/bluebonnet.qmd"
+      - "posts/politics_python/HW2.qmd"
     type: grid
     fields: [title, categories, date]
     sort: "date desc"

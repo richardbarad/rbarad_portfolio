@@ -1,6 +1,6 @@
 project:
   type: website
-
+  output-dir: docs
 website:
   navbar:
     left:
@@ -18,7 +18,7 @@ website:
         - icon: envelope
           href: mailto:richard.barad@gmail.com
 
-page-footer:
+  page-footer:
     right: "This page is built with [Quarto](https://quarto.org/)."
     left: "&copy; cc-Richard Barad, 2024"
         
