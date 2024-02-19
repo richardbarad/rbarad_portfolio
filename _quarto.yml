@@ -3,6 +3,8 @@ project:
   output-dir: docs
 website:
   navbar:
+    search: false
+    pinned: true
     left:
       - href: index.qmd
         text: 'Home'

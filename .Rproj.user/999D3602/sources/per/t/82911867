@@ -3,7 +3,7 @@
     "path": "C:/Users/richa/GitHub/rbarad_portfolio/_quarto.yml",
     "project_path": "_quarto.yml",
     "type": "yaml",
-    "hash": "596225723",
+    "hash": "882229688",
     "contents": "",
     "dirty": false,
     "created": 1708182361040.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "20,2",
+        "cursorPosition": "6,16",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1708296462,
+    "lastKnownWriteTime": 1708358172,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1708296462,
+    "last_content_update": 1708358172063,
     "read_only": false,
     "read_only_alternatives": []
 }
