@@ -82,8 +82,8 @@ year=2023
 
 params= {'input_featureclass':'SO_UG_KE_ET_GDHI_Admin_LHZ_simp', #Name of Feature class to join GDHI results to - must be stored in Pro Project GDB which is specified as the arcpy.env.workspace
          'sharepoint_folder':r'C:\Users\rbarad\OneDrive - Chemonics\10.GDHI\01.EA_Monthly_Runs\01.SharePoint', #Location of Share Point folder containing ArcGIS Pro Project and Power BI Files
-         'username':'FEWS_NET', #username for AGOL
-         'password':'FewsNet2021', #Password goes here
+         'username':'XXXX', #username for AGOL
+         'password':'XXXXXX', #Password goes here
          'service':'GDHI_results'} #Name of service in AGOL to overwrite
 
 outlookstart = {1: 1,
