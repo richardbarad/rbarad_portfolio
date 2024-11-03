@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.6.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -24,7 +24,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -35,7 +35,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -70,17 +70,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-054b4dac1a392494bc2b80d423da1e9d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-00f2c5303ec025d8cefd3bb415dda195.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -89,14 +95,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
 }</script>
-
 <script src="../../site_libs/kePrint-0.0.1/kePrint.js"></script>
+
 <link href="../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
 
 
 </head>
@@ -104,48 +112,48 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../portfolio.html" rel="" target="">
- <span class="menu-text">Work Samples</span></a>
+    <a class="nav-link" href="../../portfolio.html"> 
+<span class="menu-text">Work Samples</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../resume.html" rel="" target="">
- <span class="menu-text">Resume</span></a>
+    <a class="nav-link" href="../../resume.html"> 
+<span class="menu-text">Resume</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/richard-barad-70b70277/" rel="" target=""><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/richard-barad-70b70277/"> <i class="bi bi-linkedin" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/richardbarad" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/richardbarad"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:richard.barad@gmail.com" rel="" target=""><i class="bi bi-envelope" role="img">
+    <a class="nav-link" href="mailto:richard.barad@gmail.com"> <i class="bi bi-envelope" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -253,6 +261,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
+
 <section id="overview" class="level1">
 <h1>Overview</h1>
 <p>This project was prepared as a final project for the MUSA-508: Public Policy Analytics at the University of Pennsylvania. The project uses machine learning techniques, specifically logistic regression to build a model to forecast the likelihood of restaurants in the city of Chicago passing their health inspections. The analysis relies heavily on data from the Chicago Open Data Portal and data from the U.S Census, American Community Survey dataset.</p>
@@ -282,7 +291,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="import-inspection-data">Import Inspection Data</h2>
 <p>We begin building our predictive model by importing food inspection data from the city of Chicago, covering all records since our analysis focuses on historical failures. The provided information originates from assessments conducted on restaurants and food establishments in Chicago from January 1, 2010 to present. These inspections are carried out by personnel from the Chicago Department of Public Health’s Food Protection Program. Subsequently, the results are entered into a database for approval by a State of Illinois Licensed Environmental Health Practitioner. After importing the data on food inspections, we clean and standardize the business names along with the facility types. Our selectiveness ensures the predictive model will be built on the types of establishments (i.e: Restaurants, Bakeries, and Coffee Shops) we are trying to target for the Local Restaurant Improvement Fund.</p>
 <div class="cell" data-hash="Chicago_Restaurants_cache/html/read_data_a6e0523664e57dcdaa676f6137caa5bc">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Read data from city of Chicago on inspections - we need all data since we look at historical failures</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -316,7 +325,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="import-business-license-data">Import Business License Data</h2>
 <p>We download business licenses from the Chicago Open Data Portal. These licenses are issued by the Department of Business Affairs and Consumer Protection in the City of Chicago, covering the period from 2002 to the present. Next, we proceed with importing and cleaning the data on business licenses. The data retrieval encompasses all licenses issued since 2010, the year our analysis starts given the limitation that our inspection data does not extend beyond the last 10 years. The business license data will be used to estimate the age of the restaurant.</p>
 <div class="cell" data-hash="Chicago_Restaurants_cache/html/download_liscenses_4c04e60468d45d4e9e63b18a36612d1f">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Download Business Licenses From the Chicago Data Portal</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -324,7 +333,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 </div>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Manual Cleaning Of Addresses</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -359,7 +368,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="read-boundary-datasets">Read Boundary Datasets</h2>
 <p>We collect the spatial data for the neighborhoods and the overall city boundary of Chicago, preparing for our spatial analysis and upcoming visualizations. The boundaries of both the city and its neighborhoods are obtained from the Chicago Data Portal. The neighborhood boundaries layer is refined to include only the neighborhoods and geometry columns, and both the neighborhoods and the city boundary are transformed to a common spatial reference system for compatibility with the other datasets that will be used in our analysis.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>neighboorhoods <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="st">'C:/Users/richa/GitHub/Musa_5080_final/Data/neighboorhoods.shp'</span>)<span class="sc">%&gt;%</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_transform</span>(<span class="st">'ESRI:102271'</span>) <span class="sc">%&gt;%</span></span>
@@ -383,7 +392,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <p>The dataset is cleaned and the geometries are transformed into the appropriate projected coordinate system. We use the household variables to calculate the percent of households in a census block that are below the poverty line. The percent poverty and median rent variables will be included as predictors in our model. Additionally, we calculate the percent of the population in a census tract that is white. This information is not included in our model, but will be used latter on to examine if model accuracy varies between majority white and majority non-white neighborhoods.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>variables <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"B17017_002"</span>, <span class="co">#Total Households w/ income below poverty line</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>              <span class="st">"B17017_001"</span>, <span class="co">#Total Households </span></span>
@@ -421,7 +430,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The first step in building the dataset we use to train our model involves filtering and cleaning the inspection data. This process involves projecting the restaurant data into the appropriate coordinate system and selecting just facilities that match the types of businesses eligible for funding through the restaurant improvement program. We also exclude the inspections conducted in the boundary housing the Chicago O’Hare International Airport and inspections of restaurants located inside Midway International Airport. We treat instances labeled as “Pass w/ Conditions” as equivalent to a regular “Pass,” and conduct a spatial join between the restaurants and neighborhood layer.</p>
 <p>We build two clean datasets, one for 2021 and another for 2020. The 2021 will be used for building our model while the 2020 dataset will be used to engineer features about restaurant inspection pass rates in the previous year.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>filter <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Restaurant"</span>,<span class="st">"Bakery"</span>,<span class="st">"Tavern"</span>,<span class="st">"Ice Cream Shop"</span>,<span class="st">"Deli"</span>,<span class="st">"Cafe"</span>,<span class="st">"Coffee Shop"</span>,<span class="st">""</span>)</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -454,7 +463,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This code calculates the age of each business by referencing the date of its initial business license application. Specifically relating to retail establishments, it identifies the date when the license was first obtained. The minimum date is then joined back to the original license data and a subset of relevant columns is selected. The resulting age is estimated in days with a maximum age expected to be around 4,380 days (i.e: 365 days x 12 years).</p>
 <p>To enhance accuracy, our code attempts various join methods to join the business license to the inspection data, as direct joining on the license id did not consistently yield matches. The time frame considered spans 12 years, reflecting the available license data from 2010 onward. This ensures that the analysis focuses on the relevant period up to the year 2021. For roughly 6% of 2021 inspections it was not possible to determine the age of the restaurant - we set the age of these restaurants equal to the city wide median. The map below shows the results of our age analysis for restaurants included in the 2021 inspection dataset.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#For each for retail establishment determine date when a license was first obtained</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>liscense_min <span class="ot">&lt;-</span> liscenses <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(doing_business_as_name,address) <span class="sc">%&gt;%</span> <span class="fu">summarize</span>(<span class="at">min_date =</span> <span class="fu">min</span>(license_start_date)) <span class="sc">%&gt;%</span></span>
@@ -490,7 +499,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_void</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Chicago_Restaurants_files/figure-html/determine_age-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="Chicago_Restaurants_files/figure-html/determine_age-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -499,7 +512,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This code estimates the number of previous violations for each business within the dataset. It begins by filtering the data based on the condition that the year is earlier than 2021 and the outcome is defined as ‘Fail’. We then group the dataset by business name and address, and the violations are counted. The results are then joined to the 2021 inspection data after being renamed. The purpose of this code is to provide an overview of the historical violation records associated with each business, helping us understand the full compliance history throughout the city of Chicago.</p>
 <p>We also use the age variable and the previous fail variable to calculate the number of failures per day open. This variable serves as an interaction term that considers both the age of the restaurant and the previous number of failures. The map below show the results of our previous inspection failure analysis for all restaurants in the 2021 inspection dataset.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>fails <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_drop_geometry</span>() <span class="sc">%&gt;%</span></span>
@@ -521,7 +534,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_void</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Chicago_Restaurants_files/figure-html/estimate_failures-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="Chicago_Restaurants_files/figure-html/estimate_failures-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -530,7 +547,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Here, we integrate census data into the 2021 restaurant inspection dataset through a spatial join, associating each restaurant record with corresponding census block group information. A neighborhood level calculation is performed to determine the mean values for variables such as percent poverty, median rent, and percent non-white by neighborhood. Restaurants that lack a specific census block group association are assigned the mean value for the neighborhood the restaurant is located in. In the end, each restaurant entry is supported with the census socioeconomic information, producing a more detailed picture of demographic condition of the area surrounding each restaurant in our 2021 inspection dataset which will be used to build our model.</p>
 <p>The maps below shows the census information for the restaurants in the 2021 inspection dataset.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>data_2021_2 <span class="ot">&lt;-</span> data_2021_2 <span class="sc">%&gt;%</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_join</span>(.,census_data,<span class="at">predicate =</span> st_intersects)</span>
@@ -564,7 +581,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Chicago_Restaurants_files/figure-html/join_censu_data-1.png" class="img-fluid" width="912"></p>
+<div>
+<figure class="figure">
+<p><img src="Chicago_Restaurants_files/figure-html/join_censu_data-1.png" class="img-fluid figure-img" width="912"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -573,7 +594,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>Exploratory Analysis</h1>
 <p>This map illustrates the outcomes of food inspections in 2021, which will serve as the training data for our model. Notably, a concentration of inspection points is observed in and around the Loop, as well as along traffic corridors. The spatial distribution reveals clear clustering in areas where inspection failures are prevalent.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>custom_colors <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Pass"</span> <span class="ot">=</span> <span class="st">"#41B6E6"</span>, <span class="st">"Fail"</span> <span class="ot">=</span> <span class="st">"#E4002B"</span>)</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -589,7 +610,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </center>
 <p>This map depicts the percent of restaurants that pass inspections. Restaurants in Garfield Park, New City and Chinatown have the highest fail rates in the city.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>neigh_summ <span class="ot">&lt;-</span> data_2021 <span class="sc">%&gt;%</span> <span class="fu">st_drop_geometry</span>() <span class="sc">%&gt;%</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(pri_neigh,results) <span class="sc">%&gt;%</span> <span class="fu">tally</span>() <span class="sc">%&gt;%</span></span>
@@ -613,7 +634,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </center>
 <p><br> In the figure below, we have display a stacked bar plot to illustrate the pass and fail rates across various neighborhoods throughout Chicago. The x-axis denotes different neighborhoods, the y-axis represents rates, and the bars are stacked to visually depict the distribution of pass and fail rates of food inspections in 2021. Notably, Riverdale, Millennium Park, and Jackson Park emerge as the neighborhoods with the highest percentage of pass rates in Chicago, while Garfield Park, Navy City, and Chinatown exhibit the largest percentage of fail rates for food inspections. Note: The pass/fail rates may not be completely representative since they can be influenced by the number of restaurants, or the lack thereof in Chicago’s neighborhoods.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>neigh_summ <span class="sc">%&gt;%</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_drop_geometry</span>() <span class="sc">%&gt;%</span></span>
@@ -628,7 +649,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">'2021 Pass/Fail Percentage Rates by Neighboorhood'</span>,<span class="at">x =</span> <span class="st">"Neighborhood"</span>, <span class="at">y =</span> <span class="st">"Percent"</span>, <span class="at">fill =</span> <span class="st">"Pass/Fail"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Chicago_Restaurants_files/figure-html/guick_chart-1.png" class="img-fluid" width="1344"></p>
+<div>
+<figure class="figure">
+<p><img src="Chicago_Restaurants_files/figure-html/guick_chart-1.png" class="img-fluid figure-img" width="1344"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -638,7 +663,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="datasets">311 Datasets</h2>
 <p>We obtain sanitation complaint and rodent-baiting data from the City of Chicago Open Data Portal for 2020. We use data for the previous year, because future implementation of the model will require using 311 data for the previous year since data for the current year will not yet be available. Duplicates are removed from the dataset and any data points without geometries are also removed. We also project the data into the appropriate projected coordinate system for Chicago.</p>
 <div class="cell" data-hash="Chicago_Restaurants_cache/html/get_lots_311_be5abb89506c5e0d1fc7920932014be7">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>sanitation <span class="ot">&lt;-</span> <span class="fu">read.socrata</span>(<span class="st">"https://data.cityofchicago.org/resource/v6vf-nfxy.json?SR_SHORT_CODE='SCB'"</span>)</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>rodents <span class="ot">&lt;-</span> <span class="fu">read.socrata</span>(<span class="st">"https://data.cityofchicago.org/resource/v6vf-nfxy.json?SR_SHORT_CODE='SGA'"</span>)</span>
@@ -661,7 +686,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Below, we have created a two-panel mapping visualization illustrating both the point distribution and density of sanitation complaints. In the left panel, a point map is generated by overlaying sanitation service request data onto the boundaries of Chicago. The sanitation points are highlighted in blue, offering a spatial representation of sanitation code complaints across the city. The right visualization is a density map that shows the distribution of sanitation code complaints using kernel density. This map utilizes a color gradient to depict varying density levels, with cooler colors indicating lower densities and warmer colors signifying higher concentrations. This dual-panel visualization displays the spatial distribution and density patterns of sanitation code complaints in Chicago, highlighting hotspots in the northern areas of Lake View and North Center, and in the southern parts featuring Greater Grand Crossing and Chatham.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">ncol =</span> <span class="dv">2</span>,</span>
@@ -684,12 +709,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Chicago_Restaurants_files/figure-html/complaints_visualized-1.png" class="img-fluid" width="912"></p>
+<div>
+<figure class="figure">
+<p><img src="Chicago_Restaurants_files/figure-html/complaints_visualized-1.png" class="img-fluid figure-img" width="912"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>Similar to mapping sanitation complaints, we again present the following dual-panel mapping visualization focusing in on rodent baiting data. The rodent baiting points are highlighted in blue, providing a visual representation of rodent-related service requests across the city. The right visualization features a density map that illustrates the distribution of rodent baiting incidents using kernel density estimation. This map employs a color gradient to convey varying density levels, with cooler hues representing lower densities and warmer tones indicating higher concentrations. The two visualizations illustrate the spatial distribution and density pattern of rodent baiting incidents in Chicago with notable hotspots identified in Logan Square, Avondale, North Center, and Lincoln Square.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(<span class="at">ncol=</span><span class="dv">2</span>,</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span> </span>
@@ -710,7 +739,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Chicago_Restaurants_files/figure-html/baiting_visualized-1.png" class="img-fluid" width="912"></p>
+<div>
+<figure class="figure">
+<p><img src="Chicago_Restaurants_files/figure-html/baiting_visualized-1.png" class="img-fluid figure-img" width="912"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -718,7 +751,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="theft-data">Theft Data</h2>
 <p>Thirdly, same as with sanitation complaints and rodent baiting, we have generated a dual-panel mapping visualization showcasing both point distribution and density for reported theft events. We utilize theft data obtained from the City of Chicago. We preprocessed the data to convert the ‘date’ column to a datetime format and extract the corresponding year, and filters out records with missing longitude or latitude values. The visualization methods used for both the point map and density maps align with those used in the previous panel visualizations. Upon analysis, we see a notable concentration of reported thefts in and around the Loop area.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>thefts <span class="ot">&lt;-</span> <span class="fu">read.socrata</span>(<span class="st">'https://data.cityofchicago.org/resource/qzdf-xmn8.json?primary_type=THEFT'</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">created_date =</span> <span class="fu">ymd_hms</span>(date),</span>
@@ -748,7 +781,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb16-26"><a href="#cb16-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Chicago_Restaurants_files/figure-html/thefts-1.png" class="img-fluid" width="912"></p>
+<div>
+<figure class="figure">
+<p><img src="Chicago_Restaurants_files/figure-html/thefts-1.png" class="img-fluid figure-img" width="912"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -756,7 +793,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="temporal-and-nearest-neighboor-analysis">Temporal and Nearest Neighboor Analysis</h2>
 <p>In this code, we look at the percent of restaurants within 1km of each restaurant in the 2021 inspection dataset that failed an inspection in the year prior to our analysis (i.e: 2020). Building this variable, is based on principles of temporal lag, as we anticipate that areas that had a large percentage of restaurant failures in the previous year are likely to have a large percentage of restaurant failures again. Additionally, we also run a nearest neighbor analysis and calculate the average distance from each restaurant to the nearest 50 reported theft events, 50 sanitation complaints, and 50 rodent baiting events.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Producing a Nearest Neighbor Analysis Between the 2021 Inspection Data and 2020 Sanitation Complaints and 2020 Rodent Reports</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -782,7 +819,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>The map below shows the percent of restaurants within 1km of restaurants in the 2021 inspection dataset that failed inspection in the previous year. Restaurants in the area around the loop have a low percent failure rate. Restaurants in Auburn Gresham and Northwest Humbolt Park, and East Side have some of the highest percent failure rates for neighboring restaurants.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> neighboorhoods, <span class="at">color =</span> <span class="st">"white"</span>, <span class="at">fill =</span> <span class="st">"grey80"</span>) <span class="sc">+</span></span>
@@ -792,12 +829,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_void</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Chicago_Restaurants_files/figure-html/nearest_neighboor_analysis_map-1.png" class="img-fluid" width="912"></p>
+<div>
+<figure class="figure">
+<p><img src="Chicago_Restaurants_files/figure-html/nearest_neighboor_analysis_map-1.png" class="img-fluid figure-img" width="912"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>The maps below show the results of our k nearest neighbor analysis, the average distance from restaurants to the nearest 50 rodent baiting events, sanitation complaints, and theft events. Distance is calculated in meters. A log transformation is applied to the color gradient to account for the non-normal distribution of the data.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>my_breaks <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">50</span>,<span class="dv">100</span>, <span class="dv">250</span>, <span class="dv">500</span>, <span class="dv">1000</span>, <span class="dv">2000</span>)</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -825,7 +866,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb19-24"><a href="#cb19-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_void</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Chicago_Restaurants_files/figure-html/nn_maps-1.png" class="img-fluid" width="960"></p>
+<div>
+<figure class="figure">
+<p><img src="Chicago_Restaurants_files/figure-html/nn_maps-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -834,7 +879,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>Explore Predictors</h1>
 <p>Having identified the predictors which we plan to use to predict restaurant failures we can explore the data to determine if there is a difference between the mean value for restaurants that fail inspection and restaurants that pass inspection. Based on the plots below, we can conclude that restaurants that fail tend to have a higher mean age, a lower mean number of previous fails per day open and a higher mean number of previous failures. Restaurants that fail also tend to be situated in census blocks with a lower mean median rent and higher mean percent of residents living in poverty. Additionally, Restaurants that fail also tend to have a lower mean average distance to the nearest 311 sanitation complaints and 311 rodent baiting events. The mean distance to the nearest 50 theft events is similar for restaurants that pass inspections and restaurants that fail inspections.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at the means for each continuous predictor</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -854,12 +899,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Chicago_Restaurants_files/figure-html/examine_means-1.png" class="img-fluid" width="960"></p>
+<div>
+<figure class="figure">
+<p><img src="Chicago_Restaurants_files/figure-html/examine_means-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>The table below shows the mean value for each predictor for restaurants that failed inspection and restaurants that passed inspection. The table also includes the results of a series of t-tests. T-tests can be used to determine if the mean values are statistically different from each other. P-values that are less than 0.05 indicate that the mean value for restaurants that passed inspection and restaurants that failed are statistically different from each other. The difference in the mean is statistically significant for all predictors except for the age of the restaurant, the distance to nearest 50 reported theft events, and failures per day open.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>t_age <span class="ot">&lt;-</span> <span class="fu">t.test</span>(data_2021_2<span class="sc">$</span>age<span class="sc">~</span>data_2021_2<span class="sc">$</span>fail)<span class="sc">$</span>p.value</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>t_decile <span class="ot">&lt;-</span> <span class="fu">t.test</span>(data_2021_2<span class="sc">$</span>decile<span class="sc">~</span>data_2021_2<span class="sc">$</span>fail)<span class="sc">$</span>p.value</span>
@@ -884,7 +933,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb21-21"><a href="#cb21-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">font_size =</span> <span class="dv">12</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<table class="lightable-minimal table table-sm table-striped small" data-quarto-postprocess="true">
+<table class="lightable-minimal table caption-top table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th">Variables</th>
@@ -964,7 +1013,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="multicollinearity-checks">Multicollinearity checks</h2>
 <p>Next, we examine the correlation matrix for the predictors in our model. Checking the correlation matrix is an important step because it allows us to determine if there is any severe multicollinearity between any of predictors. A logistic regression should not include variables that exhibit multicollinearity. We consider variables to be severely multicollinear if the r value is greater than 0.7 or less than -0.7. Based on the correlation matrix below we can conclude that is no severe multicollinerity between our predictors and they can all be safely included in our predictive model.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>data_2021_2 <span class="sc">%&gt;%</span> dplyr<span class="sc">::</span><span class="fu">select</span>(quant_predictors) <span class="sc">%&gt;%</span></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_drop_geometry</span>() <span class="sc">%&gt;%</span></span>
@@ -973,7 +1022,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">round</span>(r,<span class="at">digits=</span><span class="dv">2</span>)),<span class="at">size =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Chicago_Restaurants_files/figure-html/correlation_matrix-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="Chicago_Restaurants_files/figure-html/correlation_matrix-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -985,7 +1038,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="split-into-training-and-test-data">Split into Training and Test Data</h2>
 <p>The dataset containing restaurants inspection results for 2021 and our feature engineered predictors is split into two parts. Seventy percent of the data is put into the training dataset which will be used to train the logistic regression models. Thirty percent of the data is placed in the test dataset. We will predict the inspection result for each of the data points in the test dataset and compare the predicted outcome to the actual outcomes to assess the model accuracy.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Split Data Into 70:30 Training Dataset and Test Dataset</span></span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -1004,7 +1057,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="model-1">Model 1</h3>
 <p>Our first model includes the following predictors: Age of restaurant, previous number of fails, fails per day open, Median Rent of census block, percent poverty of census block, and the theft, rodent, and sanitation nearest neighbor variables. The table below shows the Beta Coefficient and p-value for each of the predictors in the model. Examining the p-value can help provide a sense of the predictive power of the variable. We decide to retain all variables because all variables have a p-value that is lower than 0.3. While some of the p-values are not statistically significant they do appear to be adding some predictive power to the model.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>model1 <span class="ot">&lt;-</span> <span class="fu">glm</span>(fail <span class="sc">~</span> age <span class="sc">+</span> prev_fails <span class="sc">+</span> Median_Rent <span class="sc">+</span> rodents.nn <span class="sc">+</span> sanitation.nn <span class="sc">+</span> thefts.nn <span class="sc">+</span> pct_poverty <span class="sc">+</span> fails_Per_day,</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>                     <span class="at">data =</span> train,</span>
@@ -1015,7 +1068,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<table class="lightable-minimal table table-sm table-striped small" data-quarto-postprocess="true">
+<table class="lightable-minimal caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th"></th>
@@ -1080,7 +1133,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="model-2">Model 2</h3>
 <p>In our second model, we include all the same variables as model one. We also add the variable that indicates that percent of restaurants within 1 kilometer that failed inspections in the previous year as a predictor (i.e: prev_year_pct_fail). The Beta Coefficients and p-values for Model 2 are shown below. The prev_year_pct_fail has a low p-value so we decide to retain it in model 3.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>model2 <span class="ot">&lt;-</span> <span class="fu">glm</span>(fail <span class="sc">~</span> age <span class="sc">+</span> prev_fails <span class="sc">+</span> Median_Rent <span class="sc">+</span> rodents.nn <span class="sc">+</span> sanitation.nn <span class="sc">+</span> thefts.nn <span class="sc">+</span> pct_poverty <span class="sc">+</span> prev_year_pct_fail <span class="sc">+</span> fails_Per_day,</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>                     <span class="at">data =</span> train,</span>
@@ -1091,7 +1144,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<table class="lightable-minimal table table-sm table-striped small" data-quarto-postprocess="true">
+<table class="lightable-minimal caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th"></th>
@@ -1161,7 +1214,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="model-3">Model 3</h3>
 <p>Model three includes all the same predictors as model two but we also include the decile associated with the failure rate of the neighborhood the restaurant is located in. The predictive power of the decile variable is very high as noted by the high beta coefficient and the p-value which is close to 0.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>model3 <span class="ot">&lt;-</span> <span class="fu">glm</span>(fail <span class="sc">~</span> age <span class="sc">+</span> prev_fails <span class="sc">+</span> Median_Rent <span class="sc">+</span> rodents.nn <span class="sc">+</span> sanitation.nn <span class="sc">+</span> thefts.nn <span class="sc">+</span> pct_poverty <span class="sc">+</span> prev_year_pct_fail <span class="sc">+</span> decile <span class="sc">+</span> fails_Per_day,</span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>                     <span class="at">data =</span> train,</span>
@@ -1172,7 +1225,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<table class="lightable-minimal table table-sm table-striped small" data-quarto-postprocess="true">
+<table class="lightable-minimal caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th"></th>
@@ -1248,7 +1301,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="make-predictions">Make Predictions</h2>
 <p>We make predictions using all three logistic models. The result is a prediction using each of the models for each of the restaurants in the test dataset.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>testProbs <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">inspection_id =</span> test<span class="sc">$</span>inspection_id,</span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>                        <span class="at">Outcome =</span> <span class="fu">as.factor</span>(test<span class="sc">$</span>fail),</span>
@@ -1265,7 +1318,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>All three models are a step above selecting restaurants at random. The grey line shown below shows what an ROC curve would look like if restaurants were selected randomly for the restaurant improvement program.</p>
 <p>A useful way to compare the fit of the different logistic regression models is to calculate the Area Under (AUC) metric for each of the ROC curves. ROC curves that have a higher AUC have a better fit. The AUC values are visible in top left hand corner of the ROC plot. Model three has the highest AUC of the three models. Moving forward, we will only present results for Model 3.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>auc1 <span class="ot">&lt;-</span> <span class="fu">round</span>(pROC<span class="sc">::</span><span class="fu">auc</span>(testProbs<span class="sc">$</span>Outcome,testProbs<span class="sc">$</span>probs1),<span class="dv">3</span>)</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>auc2 <span class="ot">&lt;-</span> <span class="fu">round</span>(pROC<span class="sc">::</span><span class="fu">auc</span>(testProbs<span class="sc">$</span>Outcome,testProbs<span class="sc">$</span>probs2),<span class="dv">3</span>)</span>
@@ -1285,7 +1338,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Chicago_Restaurants_files/figure-html/roc_curve-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="Chicago_Restaurants_files/figure-html/roc_curve-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -1297,7 +1354,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The density plots below show the density of predicted probabilities for restaurants in the test dataset that passed inspection and restaurants that failed inspections based on model three. The predicted probabilities of failing inspection for almost all points in the test dataset are under 0.50. This indicates that there is generally a high level of uncertainty on if a restaurant will pass inspection.</p>
 <p>However, a positive sign is that the peak of the predicted probability density curve for restaurants that fail inspection is higher than for restaurants that pass inspection. The most frequent predicted fail probability for restaurants that actually failed inspection is approximately 0.3. On the other hand, the most frequent fail probability for restaurants that passed inspection is approximately 0.22.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(testProbs, <span class="fu">aes</span>(<span class="at">x =</span> probs3, <span class="at">fill =</span> <span class="fu">as.factor</span>(Outcome))) <span class="sc">+</span> </span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>() <span class="sc">+</span></span>
@@ -1311,12 +1368,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Chicago_Restaurants_files/figure-html/density_chart-1.png" class="img-fluid" width="960"></p>
+<div>
+<figure class="figure">
+<p><img src="Chicago_Restaurants_files/figure-html/density_chart-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>The table below show the median predicted fail probability for restaurants that pass inspection and restaurants that failed inspection. The median predicted fail probability for restaurants that fail inspection is higher than restaurants that passed inspection.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>testProbs <span class="sc">%&gt;%</span></span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Outcome) <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(<span class="at">median_probs=</span><span class="fu">median</span>(probs3),<span class="at">mean_probs=</span><span class="fu">mean</span>(probs3)) <span class="sc">%&gt;%</span></span>
@@ -1326,7 +1387,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<table class="lightable-minimal table table-sm table-striped small" data-quarto-postprocess="true">
+<table class="lightable-minimal caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th">Actual Outcome</th>
@@ -1360,7 +1421,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <p>The table below also includes the number of restaurants that are predicted to fail at each threshold (i.e: the number of restaurants with a fail probability above the threshold). We can see that there are trade offs when selecting a threshold, when using a lower threshold the specificity tends to increase while the sensitivity and accuracy decline. We choose 0.3 as the optimal threshold - at this threshold we have an accuracy rate which is still well above 50% and identify 746 restaurants as at risk of failing inspection which is a reasonable number of restaurants to target for the restaurant improvement program.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>tresholds <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">0.1</span>,<span class="fl">0.15</span>,<span class="fl">0.2</span>,<span class="fl">0.25</span>,<span class="fl">0.3</span>,<span class="fl">0.35</span>,<span class="fl">0.4</span>,<span class="fl">0.45</span>,<span class="fl">0.5</span>,<span class="fl">0.55</span>,<span class="fl">0.6</span>)</span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>sensitivity <span class="ot">&lt;-</span> <span class="fu">c</span>()</span>
@@ -1385,7 +1446,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb31-21"><a href="#cb31-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">row_spec</span>(<span class="dv">5</span>, <span class="at">bold =</span> T, <span class="at">background =</span> <span class="st">"lightgreen"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<table class="lightable-paper table table-sm table-striped small" data-quarto-postprocess="true">
+<table class="lightable-paper caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
 <th style="text-align: right;" data-quarto-table-cell-role="th">Threshold</th>
@@ -1481,7 +1542,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Here, we examine the confusion matrix for the test dataset predictions for our selected model (i.e: Model 3) at the selected thresholds (0.3). The confusion matrix compares our predictions to the actual outcomes. In the confusion matrix, the value in the top left corner represents cases where we correctly predicted a restaurant would pass inspection. The value in the bottom right corner indicates the number of restaurants we correctly predicted as passing inspection. The value in the top right corner, indicates the number of restaurants we predicted as Failing but actually passed inspection (i.e: false negatives). The value in the bottom left corner indicates the number of restaurants we predicted to fail that actually passed (i.e: false positives). When using the 0.3 threshold, our model miss classifies 491 restaurants as failing inspections and correctly classifies 255 restaurants resulting in a sensitivity of 34.18%.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>predictions <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(<span class="fu">ifelse</span>(testProbs<span class="sc">$</span>probs3 <span class="sc">&gt;</span> <span class="fl">0.3</span>,<span class="dv">1</span>,<span class="dv">0</span>))</span>
 <span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>confusematrix <span class="ot">&lt;-</span> caret<span class="sc">::</span><span class="fu">confusionMatrix</span>(testProbs<span class="sc">$</span>Outcome,predictions,<span class="at">positive=</span><span class="st">"1"</span>)</span>
@@ -1497,7 +1558,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<table class="lightable-minimal table table-sm table-striped small" data-quarto-postprocess="true">
+<table class="lightable-minimal caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <colgroup>
 <col style="width: 25%">
 <col style="width: 25%">
@@ -1512,7 +1573,7 @@ Actual
 </div></th>
 <th data-quarto-table-cell-role="th" style="text-align: right; empty-cells: hide; border-bottom: hidden;"></th>
 </tr>
-<tr class="odd">
+<tr class="even">
 <th style="text-align: left;" data-quarto-table-cell-role="th">Prediction</th>
 <th style="text-align: right;" data-quarto-table-cell-role="th">Pass</th>
 <th style="text-align: right;" data-quarto-table-cell-role="th">Fail</th>
@@ -1547,7 +1608,7 @@ Actual
 <p>We also run a cross validation for our chosen model and threshold combination. The cross validation helps us understand if the model is generalizable to different data. A cross validation involves running the model multiple times while changing the data points which are included in the training and test datasets. We run a 50-fold cross validation using the 2021 inspection data and compare the predicted outcomes to the actual outcome in each of the 50 test datasets and calculate the sensitivity, specificty, accuracy, and area under the curve metrics for each fold.</p>
 <p>The figure below shows the distribution of the AUC, sensitivity, specificity, and accuracy across the 50 folds. Sensitivity, specificity, and accuracy are again calculated using the 0.3 probability threshold. The model generalizes well according to the specificity and accuracy outcomes as indicated by the limited variability in the range of outcomes. However, the sensitivity (i.e: percent of failures correctly predicted) has a wider spread of outcomes across the different folds. Understanding this variation in the models ability to accurately predict restaurant failures is a key limitation which will be important for the restaurant improvement program to understand. In the next section, we will try to identify geographic areas where the model performance is poor.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>ctrl <span class="ot">&lt;-</span> <span class="fu">trainControl</span>(<span class="at">method =</span> <span class="st">"cv"</span>, <span class="at">number =</span> <span class="dv">50</span>, <span class="at">classProbs =</span> <span class="cn">TRUE</span>, <span class="at">savePredictions =</span> <span class="cn">TRUE</span>, <span class="at">summaryFunction =</span> twoClassSummary)</span>
 <span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -1589,7 +1650,11 @@ Actual
 <span id="cb33-38"><a href="#cb33-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Chicago_Restaurants_files/figure-html/cross_validation-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="Chicago_Restaurants_files/figure-html/cross_validation-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -1598,7 +1663,7 @@ Actual
 <p>The maps below show the sensitivity, specificity, and accuracy of the model predictions for the initial test dataset by neighborhood when using the 0.3 threshold. There are some key spatial patterns and trends in the results which are important for model users to understand. First, the sensitivity in many neighborhoods is 0%. This means that in many parts of the city the model failed to accurately predict all restaurant failures when setting the threshold for a predicted failure at 0.3. Examples of neighborhoods where this is true include Grand Boulevard, United Center, Armour Square and Logan Square. The neighborhoods which have a sensitivity of 0% tend to also have a specificity near 100%.</p>
 <p>Conversely, there are also neighborhoods where the specificity is 0% and the sensitivity is near 100%. Examples of such neighborhoods include Chinatown, New City, Garfield Park and Washington Heights. These are the same neighborhoods which had high failure rates based on our exploratory analysis.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>accuracy_neigh <span class="ot">&lt;-</span> testProbs <span class="sc">%&gt;%</span></span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(inspection_id,Outcome,probs3) <span class="sc">%&gt;%</span></span>
@@ -1631,7 +1696,11 @@ Actual
 <span id="cb34-29"><a href="#cb34-29" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Chicago_Restaurants_files/figure-html/sens_spec_neigh-1.png" class="img-fluid" width="912"></p>
+<div>
+<figure class="figure">
+<p><img src="Chicago_Restaurants_files/figure-html/sens_spec_neigh-1.png" class="img-fluid figure-img" width="912"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -1641,7 +1710,7 @@ Actual
 <p>Our predictions for restaurants in neighborhoods that have a very low or low historical failure rate exhibit a low sensitivity, high specificity, and high overall accuracy. The low sensitivity indicates that our model only accurately predicts 1.6% of restaurant failures in neighborhoods with a low historical failures. Because the number of failures is very small (approximately 8-12% of inspections in most neighborhoods) our accuracy is still high in these neighborhoods.</p>
 <p>Our predictions for restaurants in neighborhoods that have a high historical failure rate exhibit a high sensitivity and low specificity, and low overall accuracy. The low specificity indicates that our model only accurately predicts 21.71% of restaurants as passing inspections. A large number of restaurants that actually passed inspections are miss classified as failing inspections in neighborhoods with a high historical failure rate.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>testProbs <span class="sc">%&gt;%</span></span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(inspection_id,Outcome,probs3) <span class="sc">%&gt;%</span></span>
@@ -1664,7 +1733,7 @@ Actual
 <span id="cb35-19"><a href="#cb35-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<table class="lightable-minimal table table-sm table-striped small" data-quarto-postprocess="true">
+<table class="lightable-minimal caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th">Historical Neighboorhood Failure Rate</th>
@@ -1709,7 +1778,7 @@ Actual
 <h2 class="anchored" data-anchor-id="accuracy-by-race-context">Accuracy by Race Context</h2>
 <p>We also examine our model performance across different race contexts. We classify census tracts into majority white census tracts and majority non white census tracts and examine the accuracy, sensitivity, and specificity for predictions for restaurants in majority white and majority non white census tracts using our selected threshold of 0.3. The sensitivity is higher for restaurants in majority non-white areas and the specificity is lower. The lower specificity our model and threshold combination tends to overestimate the number of restaurant failures in non-white areas. Conversely, the low sensitivity in white areas indicates that the model misses a large percentage of restaurant failures in majority white area.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>testProbs <span class="sc">%&gt;%</span></span>
 <span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(inspection_id,Outcome,probs3) <span class="sc">%&gt;%</span></span>
@@ -1732,7 +1801,7 @@ Actual
 <span id="cb36-19"><a href="#cb36-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<table class="lightable-minimal table table-sm table-striped small" data-quarto-postprocess="true">
+<table class="lightable-minimal caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th">Majority Population</th>
@@ -1807,18 +1876,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -1850,11 +1908,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1864,8 +1961,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1877,7 +1983,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1921,6 +2150,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1946,6 +2176,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -2008,13 +2264,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">© cc-Richard Barad, 2024</div>   
+    <div class="nav-footer-left">
+<p>© cc-Richard Barad, 2024</p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
-    <div class="nav-footer-right">This page is built with <a href="https://quarto.org/">Quarto</a>.</div>
+    <div class="nav-footer-right">
+<p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
   </div>
 </footer>
+
 
 
 

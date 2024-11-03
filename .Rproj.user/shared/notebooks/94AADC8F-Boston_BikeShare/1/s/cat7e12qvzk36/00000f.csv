@@ -1,7 +1,0 @@
-"0","all_data <- all_data %>%"
-"0","  left_join(.,bike_data %>% dplyr::select(-Public,-Number),by='Name') %>%"
-"0","  left_join(.,weather.Panel,by='interval60') %>%"
-"0","  dplyr::filter(District != 'Salem') %>%"
-"0","  dplyr::filter(Name != 'BCBS Hingham') %>%"
-"0","  st_as_sf()"
-"0",""

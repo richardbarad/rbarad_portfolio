@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.6.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -24,7 +24,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -35,7 +35,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -70,17 +70,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-054b4dac1a392494bc2b80d423da1e9d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-00f2c5303ec025d8cefd3bb415dda195.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -89,14 +95,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
 }</script>
-
 <script src="../../site_libs/kePrint-0.0.1/kePrint.js"></script>
+
 <link href="../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
 
 
 </head>
@@ -104,48 +112,48 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../portfolio.html" rel="" target="">
- <span class="menu-text">Work Samples</span></a>
+    <a class="nav-link" href="../../portfolio.html"> 
+<span class="menu-text">Work Samples</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../resume.html" rel="" target="">
- <span class="menu-text">Resume</span></a>
+    <a class="nav-link" href="../../resume.html"> 
+<span class="menu-text">Resume</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/richard-barad-70b70277/" rel="" target=""><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/richard-barad-70b70277/"> <i class="bi bi-linkedin" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/richardbarad" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/richardbarad"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:richard.barad@gmail.com" rel="" target=""><i class="bi bi-envelope" role="img">
+    <a class="nav-link" href="mailto:richard.barad@gmail.com"> <i class="bi bi-envelope" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -226,6 +234,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
+
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
 <p>Transited oriented development (TOD) refers to the trend of creating vibrant, livable communities which are compact, walkable, and centered around transit systems. Washington DC has experienced TOD in many sections of the city with new apartment buildings being constructed near metro stops throughout the city. This memo attempts to look at the impacts of TOD development on income and rent. We will also examine if residents living in the TOD are more likely to commute to work on public transit. We look at the spatial patterns of where workers working in public administration tend to live, and examine if they are more likely to live in neighborhoods near the metro. Data on income, rent, and mode of transportation used for commuting is downloaded from the American Community Survey and we compare data from 2009 to data from 2017.</p>
@@ -236,7 +245,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>Get Census Data</h1>
 <p>I start my analysis by downloading the ACS census data for the variables of interest. I download ACS data for both 2009 and 2017 and merge the datasets together into one table.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set ACS Variables</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>acs_variables2017 <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
@@ -312,7 +321,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>Procees DC Metro Data</h1>
 <p>Next I download the metro station data from the Washington DC open data portal. I remove all metro stops which are not located within the Washington DC district boundaries.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dc_boundary <span class="ot">&lt;-</span> <span class="fu">st_union</span>(dc2017tracts) <span class="co">#Create union of all census tracts in DC</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -325,7 +334,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="buffer-metro-points">Buffer Metro Points</h2>
 <p>I create a one mile buffer around the dc metro points.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>metro_buffer <span class="ot">&lt;-</span> <span class="fu">st_buffer</span>(dcmetro,<span class="dv">2640</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>metro_union_buffer <span class="ot">&lt;-</span> <span class="fu">st_union</span>(metro_buffer)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -336,7 +345,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="get-the-centroids-of-the-census-tracts-and-identify-tod-and-non-tod">Get the centroids of the census tracts and identify TOD and Non-TOD</h2>
 <p>I get the centroid of the census tracts and determine which census tract centroids are located within the TOD area. Census tracts which have a centroid within the TOD area are considered to be part of the TOD area.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>centroids <span class="ot">&lt;-</span> <span class="fu">st_centroid</span>(all_census_data)</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -365,7 +374,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>Mapping the TOD Area</h1>
 <p>The map below shows the census tracts included in the TOD area. All census tracts which are not part of the TOD area are shown in green - these census tracts will be refereed to as the non-TOD area.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>()<span class="sc">+</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> all_census_data, <span class="fu">aes</span>(<span class="at">fill =</span> type))<span class="sc">+</span></span>
@@ -378,14 +387,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mapTheme</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="DCTOD_files/figure-html/make_tod_map-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="DCTOD_files/figure-html/make_tod_map-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 <section id="mean-annual-income-in-the-tod" class="level2">
 <h2 class="anchored" data-anchor-id="mean-annual-income-in-the-tod">Mean Annual Income in the TOD</h2>
 <p>The maps below show the mean annual income by census tract in 2009 and 2019 - the TOD area is indicated by the red outline and metro stops are shown as black dots. The 2009 data is adjusted for inflation, and income data is presented using the value of the dollar in 2017. Income in Washington DC is generally highest in the Northwestern areas of Washington DC, while census tracts West of the Anacostia river have the lowest annual income. Annual income has increased in several census tracts located within the TOD. Metro stops where there is a notable increase in income in the census tracts surrounding the metro stop are visualized in the map as larger dots. Areas of the TOD where we observe a large increase in income levels from 2009 to 2017 include census tracts near the Columbia Heights and Petworth metro stops on the green metro line, and tracts located near the Brookland and NOMA metro stops on the red line.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>all_census_data <span class="ot">&lt;-</span> all_census_data <span class="sc">%&gt;%</span> </span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">income_class =</span> <span class="fu">cut</span>(median_income, <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">25000</span>, <span class="dv">50000</span>, <span class="dv">75000</span>, <span class="dv">100000</span>, <span class="fu">max</span>(all_census_data<span class="sc">$</span>median_income, <span class="at">na.rm=</span><span class="cn">TRUE</span>))))</span>
@@ -405,7 +418,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mapTheme</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="DCTOD_files/figure-html/make_income_map-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="DCTOD_files/figure-html/make_income_map-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -413,7 +430,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="median-rent-in-the-tod">Median Rent in the TOD</h2>
 <p>The maps below show the median monthly rent by census tract in 2009 and 2017. As in the previous map, the TOD area is shown by a red outline and metro stops are shown as black dots. Rent has increased sharply in many neighborhoods in Washington DC from 2009 to 2017. The 2009 map has been adjusted for inflation, and all data is represented using the value of a dollar in 2017. Rent has increased from 2009 to 2017 in several areas of Washington DC - some of the largest increases in rent have occurred in neighborhoods located in the TOD area. Notably, the census tracts located near the Columbia Heights, Petworth, Brookland, Fort Totten, and Takoma metro stops have all experienced increases in rent - in these neighborhoods residents appear to be willing to pay more in rent to live near the metro. However, the pattern of rising rents in the TOD area is not present in all parts of the city, residents living east of the Anacostia river continue to have some of the lowest rents in Washington DC. The cost of rent east of the Anacostia is similar in the TOD and non-TOD areas.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>all_census_data <span class="ot">&lt;-</span> all_census_data <span class="sc">%&gt;%</span> </span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rent_class =</span> <span class="fu">cut</span>(median_rent, <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">500</span>, <span class="dv">1000</span>, <span class="dv">1500</span>, <span class="dv">2000</span>, <span class="fu">max</span>(all_census_data<span class="sc">$</span>median_rent, <span class="at">na.rm=</span><span class="cn">TRUE</span>))))</span>
@@ -432,7 +449,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mapTheme</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="DCTOD_files/figure-html/make_rent_map-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="DCTOD_files/figure-html/make_rent_map-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -441,7 +462,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>These maps show the percent of workers using any form of public transit to commute to work in 2009 and 2017. As in the previous maps, TOD area is shown by the red line and metro stops are presented as block dots. The percentage of workers commuting to work on public transit is higher in the TOD area. The may be partially attributed to the faster speed and greater reliability of metro compared to the bus. Residents who have the ability to live in desirable areas with high rent and want to commute by public transit appear to be choosing to live near metro stops. For instance, areas with high rents along the green line and both branches of the red line also have a high percentage of residents commuting to work on public transit.</p>
 <p>Metro stops in the downtown corridor do not have a high percentage of the population living near the metro stops commuting to work on public transit. This may be because residents who live downtown are likely to also work downtown and live close enough to their workplace to walk to work. However, additional analysis is needed to confirm this hypothesis. In areas with high income which are also located outside of the TOD-area residents are not likely to commute to work on public transit.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>all_census_data <span class="ot">&lt;-</span> all_census_data <span class="sc">%&gt;%</span> </span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">transit_class =</span> <span class="fu">cut</span>(pct_transit, <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">20</span>, <span class="dv">30</span>, <span class="dv">40</span>, <span class="dv">50</span>, <span class="fu">max</span>(all_census_data<span class="sc">$</span>pct_transit, <span class="at">na.rm=</span><span class="cn">TRUE</span>))))</span>
@@ -460,7 +481,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mapTheme</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="DCTOD_files/figure-html/make_transit_usage_map-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="DCTOD_files/figure-html/make_transit_usage_map-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -469,7 +494,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Public sector jobs represent a large employment sector in the DMV area, accounting for 15 percent of jobs. Public administration works tend to have higher incomes than workers in the service industry, but lower incomes than employees working in office jobs in the private sector. Federal employees also receive a commuter benefit which can offset the cost of commuting to work on public transit. Looking at where public administrative workers are living can help us determine if federal workers are using this benefit.</p>
 <p>Federal workers appear to be choosing to live within the TOD area in close proximity to metro - federal commuter benefits may be contributing to this choice. Additionally, the percentage of federal workers living in the downtown corridor has declined from 2009 to 2017. As shown in previous maps, the downtown corridor has some of the highest rents in the city and public administration workers may be getting priced out of these areas as rent continues to increase. Conversely, the percentage of federal workers living near the Brookland, NOMA, and Fort Totten metro stops has increased in 2017 compared to 2009. As shown in the income and rent maps, these neighborhoods have experienced increases in rent and average income level, but rent remains lower than the most expensive parts of the city. These recently developed areas are suitable for public administration workers because the neighborhoods are desirable and provide easy access to public transit while still being affordable to middle income residents such as public administration workers.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>all_census_data <span class="ot">&lt;-</span> all_census_data <span class="sc">%&gt;%</span> </span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">public_class =</span> <span class="fu">cut</span>(pct_public, <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">10</span>, <span class="dv">15</span>, <span class="dv">20</span>, <span class="dv">25</span>, <span class="fu">max</span>(all_census_data<span class="sc">$</span>pct_public, <span class="at">na.rm=</span><span class="cn">TRUE</span>))))</span>
@@ -488,7 +513,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mapTheme</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="DCTOD_files/figure-html/make_publicadmin_map-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="DCTOD_files/figure-html/make_publicadmin_map-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -500,7 +529,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="charts">Charts</h2>
 <p>The charts below show the annual income, monthly rent, percent of workers commuting to work on public transit, and the percent of workers working public administration. For all indicators, the charts display the average value for census tracts in the TOD and the average value for census tracts in the Non-TOD areas in 2009 and 2017. Notably, the mean rent in TOD and non-TOD areas was similar in 2009. By 2017, the difference in rent between TOD and non-TOD had increased dramatically. The same patterns have also occurred when looking at annual income, with the gap in income between TOD and non-TOD areas increasing between 2009 and 2017.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>census_data_summary <span class="ot">&lt;-</span> </span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_drop_geometry</span>(all_census_data) <span class="sc">%&gt;%</span></span>
@@ -526,7 +555,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>           <span class="at">strip.placement =</span> <span class="st">"outside"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="DCTOD_files/figure-html/bar_plot-1.png" class="img-fluid" width="768"></p>
+<div>
+<figure class="figure">
+<p><img src="DCTOD_files/figure-html/bar_plot-1.png" class="img-fluid figure-img" width="768"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -534,14 +567,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="table">Table</h2>
 <p>Both rent and income have increased sharply in TOD areas from 2009 and 2017. As shown in the table below the difference in mean income between TOD and non-TOD areas was only 1,548 USD in 2009 - by 2017 the difference had increased to 16,085 USD, indicating an increase of over <strong>900%</strong>. Similar trends are present for rent where the difference in monthly rent between TOD and non-TOD areas in 2009 was only 58 USD. By 2017 the difference had increased to 252 USD, an increase of <strong>334%</strong>.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>census_data_summary <span class="sc">%&gt;%</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="at">booktabs =</span> <span class="cn">TRUE</span>,<span class="at">col.name =</span> <span class="fu">c</span>(<span class="st">'Year'</span>,<span class="st">'Type'</span>,<span class="st">'Mean Income (USD)'</span>,<span class="st">'Mean Rent (USD)'</span>,<span class="st">'Mean % Commuting on Transit'</span>,<span class="st">'Mean % Public Workers'</span>), <span class="at">align=</span><span class="st">'c'</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<table class="table table-sm table-striped small" data-quarto-postprocess="true">
+<table class="table caption-top table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
 <th style="text-align: center;" data-quarto-table-cell-role="th">Year</th>
@@ -596,7 +629,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="analysis" class="level1">
 <h1>Analysis</h1>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Spatially join centroid of census tracts to buffers around metro stops and sum total population within 1/2 milf of buffer</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -612,7 +645,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The map below shows the population living in the TOD area surrounding each metro stop - a larger bubble indicates a larger population living in the census tracts which form the TOD area surrounding the metro stop. The population living near metro stops is high in the urban downtown core of the city where large apartment buildings that house more people tend to dominate the housing landscape. In areas on the periphery of the city single family homes tend to be the main form of housing - as a result fewer residents live within the TOD at the edges of the city.</p>
 <p>The areas surrounding metro stops have experienced population growth in many parts of Washington DC. This growth is most notable around the U street, Shaw, and Columbia Heights metro stops on the green line and is likely a result of new apartment buildings being developed around metro stops as part of a TOD development strategy.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>()<span class="sc">+</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> all_census_data,<span class="at">linewidth=</span><span class="fl">0.3</span>,<span class="at">color=</span><span class="st">'#bcbcbc'</span>,<span class="at">fill=</span><span class="st">'#eaeaea'</span>)<span class="sc">+</span></span>
@@ -626,7 +659,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>year)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="DCTOD_files/figure-html/make_pop_bubble_map-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="DCTOD_files/figure-html/make_pop_bubble_map-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -634,7 +671,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="rent-map">Rent Map</h2>
 <p>The increase in population around the Columbia Heights, Petworth, U Street, and Shaw metro stops has been accompanied by a dramatic increase in rent. Rent in the census tract around the Shaw metro stop doubled from 2009 to 2017. Similar trends are present in the TOD surrounding other metro stop such as Brookland, Fort Totten, and Petworth which experienced rent increases of 41%, 81% and 58%. Rent in TOD areas East Of Anacostia river have also increases, but by much smaller percentages. Rent in census tracts bordering the Congress Heights metro stop increased by just 7% while rent in census tracts around the Anacostia metro stop increased by 20%.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>()<span class="sc">+</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> all_census_data,<span class="at">linewidth=</span><span class="fl">0.3</span>,<span class="at">color=</span><span class="st">'#bcbcbc'</span>,<span class="at">fill=</span><span class="st">'#eaeaea'</span>)<span class="sc">+</span></span>
@@ -647,7 +684,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>year)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="DCTOD_files/figure-html/make_rent_bubble_map-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="DCTOD_files/figure-html/make_rent_bubble_map-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -656,7 +697,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>Multi Ring Buffer Analysis</h1>
 <p>This chart below shows the mean monthly rent by census tract based on the tracts distance to the nearest metro stop. Looking at the pattern of 2017 line we can observe that census tracts located closer to the metro have a higher mean rent. The point which breaks this pattern is the data point for census tracts located 2.01 - 2.50miles from the metro - this is because this group of tracts includes several census tracts in Northwest DC which have very high rent levels, these high rents pre-date the construction of metro. If we compare the 2009 line to the 2017 line we can again observe a widening of the difference in rent between between areas near the metro and those far away from metro.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>allTracts_17 <span class="ot">&lt;-</span> all_census_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2017</span>)</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>allTracts_09 <span class="ot">&lt;-</span> all_census_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2009</span>)</span>
@@ -694,7 +735,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb15-34"><a href="#cb15-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="DCTOD_files/figure-html/multi_ring_buffer-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="DCTOD_files/figure-html/multi_ring_buffer-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -742,18 +787,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -785,11 +819,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -799,8 +872,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -812,7 +894,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -856,6 +1061,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -881,6 +1087,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -943,13 +1175,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">© cc-Richard Barad, 2024</div>   
+    <div class="nav-footer-left">
+<p>© cc-Richard Barad, 2024</p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
-    <div class="nav-footer-right">This page is built with <a href="https://quarto.org/">Quarto</a>.</div>
+    <div class="nav-footer-right">
+<p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
   </div>
 </footer>
+
 
 
 

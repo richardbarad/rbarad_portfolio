@@ -1,0 +1,111 @@
+---
+title: "About Me"
+title-block-banner: true
+links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/richard-barad-70b70277/
+    - icon: github
+      text: Github
+      href: https://github.com/richardbarad
+    - icon: file-pdf
+      text: Resume
+      href: resume.qmd
+    - icon: envelope
+      text: Email
+      href: mailto:richard.barad@gmail.com
+
+listing:
+  - id: r_projects
+    contents:
+      - "posts/Bike_Boston/Boston_BikeShare.qmd"
+      - "posts/TOD_Washington_DC/DCTOD.qmd"
+      - "posts/Chicago_Inspections/Chicago_Restaurants.qmd"
+    type: grid
+    fields: [title, categories, date]
+    sort: "date desc"
+    sort-ui: false
+    page-size: 3
+    image-align: left
+    image-height: 1.75in
+  - id: py
+    contents:
+      - "posts/philly_flood_amenity_mapping/2-amenity-analysis.ipynb"
+      - "posts/philly_flood_census_mapping/index.ipynb"
+      - "posts/FEWS_NET_GDHI/GDHI.qmd"
+      - "posts/Bluebonnet/bluebonnet.qmd"
+      - "posts/politics_python/python_hw2.ipynb"
+    type: grid
+    fields: [title, categories, date]
+    sort: "date desc"
+    sort-ui: false
+    page-size: 3
+    image-align: left
+    image-height: 1.75in
+  - id: arcgis
+    contents:
+      - "posts/PA_wind_mapping/PA_Wind.qmd"
+      - "posts/FEWS_NET_GDHI/GDHI.qmd"
+    type: grid
+    fields: [title, categories, date]
+    sort: "date desc"
+    sort-ui: false
+    page-size: 3
+    image-align: left
+    image-height: 1.75in
+    
+format: 
+  html:
+    page-layout: full
+    fontsize: 11pt
+    css: styles.css
+---
+
+
+::: {.grid}
+
+<!-- Left column has a width of 4/12 and shows a picture of me -->
+::: {.g-col-3}
+::: {.left-align}
+
+
+![](images/rbarad-profile.jpg){width=3in}
+
+:::
+:::
+
+<!-- Text gets a column with width 8/12 -->
+::: {.g-col-9}
+::: {.left-align}
+
+Hello! My name is Richard Barad and I recently graduated with a Masters Degree in Urban Spatial Analytics from the University of Pennsylvania at the Weitzman School of Design. I have experience with a wide range of data analysis, data visualization, and GIS tools including ArcGIS Pro, ArcGIS Online, Q-GIS, R, Python, SQL, Microsoft Power BI, and Carto. I am currently looking for a full time job where I can apply my data and GIS skills to policy issues. My subject matter interests and areas of experience include transportation, climate change, sustainability and environmental planning, and food security. 
+
+Prior to attending Penn, I lived in Washington DC and spent eight years working in the International Development and Humanitarian Sectors. I worked for six years at the Famine Early Warning Systems Network (FEWS NET), a project which provides early warning on food insecurity issues around the globe. At FEWS NET, I conducted data analysis using python tools, developed interactive dashboard tools using Power BI and ArcGIS Online and provided ad-hoc GIS analysis and mapping support. I also previously worked as a Product Manager at the World Resources Institute where I managed WRI’s forest atlas initiative, a suite of tools used to build national forest and land use monitoring platforms.
+
+Below you will find a selection of previous professional and academic work using R, Python, and ArcGIS tools. Click the view all projects to view additional projects. 
+
+:::
+
+::: 
+
+:::
+
+#### [View all projects &rarr;](/portfolio.html)
+
+## R Projects
+
+::: {#r_projects}
+:::
+
+## Python Projects
+
+::: {#py}
+:::
+
+## ArcGIS Projects
+
+::: {#arcgis}
+:::
+
+
+

@@ -1,2 +1,0 @@
-"0","metro_buffer <- st_buffer(dcmetro,2640)"
-"0","metro_union_buffer <- st_union(metro_buffer)"

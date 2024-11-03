@@ -1,8 +1,0 @@
-"0",""
-"0","options(scipen=999) #"
-"0","options(tigris_class = ""sf"")"
-"0",""
-"0","source(""https://raw.githubusercontent.com/urbanSpatial/Public-Policy-Analytics-Landing/master/functions.r"")"
-"0",""
-"0","palette5 <- c(""#edf8e9"",""#bae4b3"",""#74c476"",""#31a354"",""#006d2c"")"
-"0",""

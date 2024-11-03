@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.6.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -24,7 +24,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -35,7 +35,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -70,17 +70,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-054b4dac1a392494bc2b80d423da1e9d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-00f2c5303ec025d8cefd3bb415dda195.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -89,6 +95,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -101,48 +108,48 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../portfolio.html" rel="" target="">
- <span class="menu-text">Work Samples</span></a>
+    <a class="nav-link" href="../../portfolio.html"> 
+<span class="menu-text">Work Samples</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../resume.html" rel="" target="">
- <span class="menu-text">Resume</span></a>
+    <a class="nav-link" href="../../resume.html"> 
+<span class="menu-text">Resume</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/richard-barad-70b70277/" rel="" target=""><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/richard-barad-70b70277/"> <i class="bi bi-linkedin" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/richardbarad" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/richardbarad"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:richard.barad@gmail.com" rel="" target=""><i class="bi bi-envelope" role="img">
+    <a class="nav-link" href="mailto:richard.barad@gmail.com"> <i class="bi bi-envelope" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -219,6 +226,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
+
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
 <p>Many cities across the United States have started using docked bike share systems. Docked bike shares are often funded using a mix of public and private funding and are present in approximately 50 different US cities. Docked bike systems provide an additional method of commuting for workers who do not own their own bike and also provide residents with access to bikes for recreational purposes. Additionally, bikes are a clean, environmentally mode of transportation.</p>
@@ -234,7 +242,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="bike-data">Bike Data</h2>
 <p>The first step in the analysis is to import the bike share data from BlueBikes. I import data covering June and July of 2023.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>B_Jun2023 <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">'C:/Users/richa/GitHub/musa_5080_HW/HW6_Bike_predictions/Data/202306-bluebikes-tripdata.csv'</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>B_Jul2023 <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">'C:/Users/richa/GitHub/musa_5080_HW/HW6_Bike_predictions/Data/202307-bluebikes-tripdata.csv'</span>)</span>
@@ -253,7 +261,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>I count the number of bike share rides occurring per hour by station.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Data2 <span class="ot">&lt;-</span> Data <span class="sc">%&gt;%</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">interval60 =</span> <span class="fu">floor_date</span>(<span class="fu">ymd_hms</span>(started_at), <span class="at">unit =</span> <span class="st">"60 mins"</span>)) <span class="sc">%&gt;%</span></span>
@@ -262,7 +270,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Next, I build a ride panel. I also set the number of trips to zero for stations which did not have any trips occurring at a given time / date.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df_list <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -314,7 +322,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="import-census-data">Import Census Data</h2>
 <p>I import census data and census tract boundaries.</p>
 <div class="cell" data-hash="Boston_BikeShare_cache/html/get_census_7303799b9887ba8f935a2d102559b9af">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>BostonCensus <span class="ot">&lt;-</span> </span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">get_acs</span>(<span class="at">geography =</span> <span class="st">"tract"</span>, </span>
@@ -347,7 +355,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Join census data to bike share data and also filter out bike share stations which are not part of analysis area.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>bike_data <span class="ot">&lt;-</span> bike_data <span class="sc">%&gt;%</span> <span class="fu">st_as_sf</span>(<span class="at">coords =</span> <span class="fu">c</span>(<span class="st">'Longitude'</span>,<span class="st">'Latitude'</span>),<span class="at">crs=</span><span class="st">'EPSG:4326'</span>) <span class="sc">%&gt;%</span> <span class="fu">st_transform</span>(<span class="dv">2249</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_join</span>(.,BostonCensus,<span class="at">join=</span>st_intersects,<span class="at">left =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
@@ -359,7 +367,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="import-weather-data">Import Weather Data</h2>
 <p>I import weather data for Boston using the riem R package.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>weather.Panel <span class="ot">&lt;-</span> </span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">riem_measures</span>(<span class="at">station =</span> <span class="st">"BOS"</span>, <span class="at">date_start =</span> <span class="st">"2023-06-25"</span>, <span class="at">date_end =</span> <span class="st">"2023-08-01"</span>) <span class="sc">%&gt;%</span></span>
@@ -378,7 +386,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Join weather data to ride panel. Also join bike share location.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>all_data <span class="ot">&lt;-</span> all_data <span class="sc">%&gt;%</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(.,bike_data <span class="sc">%&gt;%</span> dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="sc">-</span>Public,<span class="sc">-</span>Number),<span class="at">by=</span><span class="st">'Name'</span>) <span class="sc">%&gt;%</span></span>
@@ -393,7 +401,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="create-training-and-test-data">Create Training and Test Data</h2>
 <p>The trip data is split into a training and testing data. The training dataset includes all trips from June 25th 2023 to July 15th 2023 and the testing datsaet includes all trips July 15th 2023 to July 31st 2023.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>all_data <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(all_data,week <span class="sc">&gt;=</span> <span class="dv">26</span>)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -413,7 +421,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Note that this study uses weather data for Boston Logan airport for all stations in the Boston metro area. This is a limitation of the model, as weather patterns are likely to vary in different parts of the city. However, using weather data for the same location helps keep the model simple and will improve its utility for making predictions once it is operationalized. When making predictions for bike share demand, officials will only need to provide the model with a rough rainfall forecast for the entire city. This can be easily obtained from weather reports. It would not be practical for BlueBikes to obtain separate forecasts for each bike station in the Boston metro area.</p>
 <p>The graph below shows the Precipitation and Temperature patterns over the time period which is used for training the model. We note multiple days with large amount of rains including June 27th, June 28th, July 2nd, July 10th, July 16th, July 21st, July 25th, and July 29th. The temperature ranges between 60 and 90 degrees Fahrenheit and the average temperature is around 75 to 80 degrees. The temperature range during the months of June and July in Boston is ideal to for biking so temperature will likely not have a major impact on bike share demand during the period used for training the model.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(weather.Panel, <span class="fu">aes</span>(interval60,Precip)) <span class="sc">+</span> </span>
@@ -429,9 +437,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">top=</span><span class="st">"Weather Data - Boston Logan Airport (BOS) - Jun/Jul, 2023"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Boston_BikeShare_files/figure-html/plot_weather-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="Boston_BikeShare_files/figure-html/plot_weather-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
 </div>
-<details>
+</div>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(weather.Panel)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
@@ -442,7 +454,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The chart below shows the total number of bike share trips happening per hour across the Bluebikes network. The chart includes all trips taking place between June 25th and July 31st. The background color indicates the type of day. Weekdays have a grey background, while weekends have a yellow background. The 4th of July holiday has a red background, while days when it rained have a blue background.</p>
 <p>This chart shows some key temporal trends. On weekdays, there are almost allways two clear peaks in bike share demand, one in the morning during the am rush hour period and one in the evening during the PM rush hour period. The PM rush hour peak is always higher than the PM rush hour peak. On weekends there is only one peak period. On days when it rains there is a decline in demand - this decline in demand is present both on the weekend and on weekdays. On 4th of July there is a unique trend and two peaks are present, but the final peak takes place latter in the evening than usual. One hypothesis is that the second peak may be occurring after 4th of July fireworks have finished.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(all_data <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(interval60,time_of_day) <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(<span class="at">sum_count =</span> <span class="fu">sum</span>(sum_rides)))<span class="sc">+</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">data=</span>all_data <span class="sc">%&gt;%</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(is_weekend <span class="sc">==</span> <span class="dv">1</span>),<span class="fu">aes</span>(<span class="at">xintercept=</span>interval60,<span class="at">color=</span><span class="st">'weekend'</span>),<span class="at">linewidth=</span><span class="dv">2</span>,<span class="at">alpha=</span><span class="fl">0.3</span>)<span class="sc">+</span></span>
@@ -459,9 +471,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>  plotTheme</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Boston_BikeShare_files/figure-html/trip_timeseries-1.png" class="img-fluid" width="1248"></p>
+<div>
+<figure class="figure">
+<p><img src="Boston_BikeShare_files/figure-html/trip_timeseries-1.png" class="img-fluid figure-img" width="1248"></p>
+</figure>
 </div>
-<details>
+</div>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(rainy_hours)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
@@ -469,7 +485,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The first chart below shows below the number of rides taking place per day across the BlueBike network broken down by time of day. The number of rides which occur per day is generally around 12,500 to 15,000 rides. Notably, the total number of rides declines sharply on days when heavy rain storms occurred. Examples of this include July 2nd, July 10th, July 16th, and July 29th. The total number of rides occurring on weekend days is similar to the total number of rides occurring on weekdays.</p>
 <p>The second chart shows the percentage of rides taking place during different times of day. Generally, the largest percentage of rides take place during the PM commute which takes place between 3 and 7pm. The smallest percentage of rides take place overnight - the overnight period includes rides occurring between 11pm and 5am. Notably, the percentage of rides which occur during the overnight period increases on Friday and Saturday nights as residents return home after going to restaurants and bars. I hope they are not biking drunk!</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(<span class="at">ncol=</span><span class="dv">2</span>,</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -495,12 +511,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Boston_BikeShare_files/figure-html/time_of_day-1.png" class="img-fluid" width="1344"></p>
+<div>
+<figure class="figure">
+<p><img src="Boston_BikeShare_files/figure-html/time_of_day-1.png" class="img-fluid figure-img" width="1344"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>The chart below shows the total number of bike share trips occurring in Boston per hour by day of the week and by weekend/weekday. On weekdays, we can clearly see the two peaks during the PM and AM commute periods. The peak is higher during the PM commute period. On weekends, the majority of trips occur between the hours of 11am and 7pm. The number of trips tends to be lower on Friday and Tuesdays relative to other days. The lower number of trips on Friday can likely be attributed to fewer commuters going to the office to work in person on Fridays. The lower number of trips on Tuesday may be a results of 4th of July and the rain event on Tuesday July 25th deflating the total number of trips on Tuesdays.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>palette <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">'#e41a1c'</span>,<span class="st">'#377eb8'</span>,<span class="st">'#4daf4a'</span>,<span class="st">'#984ea3'</span>,<span class="st">'#ff7f00'</span>,<span class="st">'#ffff33'</span>,<span class="st">'#a65628'</span>)</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -535,7 +555,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb14-31"><a href="#cb14-31" aria-hidden="true" tabindex="-1"></a>     plotTheme)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Boston_BikeShare_files/figure-html/trips_hour_dotw-1.png" class="img-fluid" width="1344"></p>
+<div>
+<figure class="figure">
+<p><img src="Boston_BikeShare_files/figure-html/trips_hour_dotw-1.png" class="img-fluid figure-img" width="1344"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -543,7 +567,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="spatialtemporal-trends-in-bikeshare-demand">Spatial/Temporal Trends in Bikeshare demand</h2>
 <p>The maps below shows the mean number of trips originating in each census by time of day on weekends and weekdays. The maps show a strong spatial clustering pattern to where trips originate. The areas where the largest number of bike trips start are located in Cambridge and downtown Boston. There are very large number of trips originating in census tracts around MIT and Harvard. Notably, the time of day does not appear to have a major impact on where trips originate from. The hotspots for trip origins appear to remain relatively constant across the different times of day. The origin hotspots are also similar on weekdays and weekends. We can again observe that the number of trips is highest on weekdays during the PM commute period when residents are returning home from work. The increase during the PM commute period is most notable in downtown Cambridge and downtown neighborhoods of Boston.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>MA_towns <span class="ot">&lt;-</span> <span class="fu">st_make_valid</span>(<span class="fu">st_read</span>(<span class="st">'https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/Census2020_Towns/MapServer/2/query?where=1%3D1&amp;f=geojson'</span>)) <span class="sc">%&gt;%</span> <span class="fu">st_transform</span>(<span class="st">'EPSG:2249'</span>)</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -556,7 +580,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 </div>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>data_by_day <span class="ot">&lt;-</span> all_data <span class="sc">%&gt;%</span> </span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">weekend =</span> <span class="fu">ifelse</span>(is_weekend <span class="sc">==</span> <span class="dv">1</span>, <span class="st">"Weekend"</span>,<span class="st">"Weekday"</span>)) <span class="sc">%&gt;%</span></span>
@@ -576,7 +600,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>  mapTheme</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Boston_BikeShare_files/figure-html/make_fun_map-1.png" class="img-fluid" width="1728"></p>
+<div>
+<figure class="figure">
+<p><img src="Boston_BikeShare_files/figure-html/make_fun_map-1.png" class="img-fluid figure-img" width="1728"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -584,7 +612,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="spatial-patterns-in-trip-routes">Spatial Patterns in Trip Routes</h2>
 <p>The map below looks at the most common bike trip routes. The data shown is for the week of July 11th 2023 to July 15th, all routes with more than three trips are included. The thickness and color of the line indicates the number of trips along a given route. Routes with many frequent daily trips includes rides from South Boston to Downtown and rides within Cambridge. We can also observe that with few exceptions the typical trip length with a BlueBike is not long in distance. This map, along with the previous map also reveal that there are many bike stations where usage is very low.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>towns_filt2 <span class="ot">&lt;-</span> towns_filt <span class="sc">%&gt;%</span> <span class="fu">st_transform</span>(<span class="st">'EPSG:4326'</span>) <span class="sc">%&gt;%</span> <span class="fu">st_crop</span>(<span class="at">xmin=</span> <span class="sc">-</span><span class="fl">70.99</span>, <span class="at">xmax=</span><span class="sc">-</span><span class="fl">71.18</span>, <span class="at">ymin=</span><span class="fl">42.43</span>,<span class="at">ymax=</span><span class="fl">42.3</span>) <span class="sc">%&gt;%</span> <span class="fu">st_transform</span>(<span class="st">'EPSG:2249'</span>) </span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -635,7 +663,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb17-47"><a href="#cb17-47" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.background =</span> <span class="fu">element_rect</span>(<span class="at">fill=</span><span class="st">"transparent"</span>, <span class="at">colour =</span><span class="st">"transparent"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Boston_BikeShare_files/figure-html/summ_day-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="Boston_BikeShare_files/figure-html/summ_day-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -645,7 +677,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>One limitation with using the 24 hour lag is that bike trends on Monday and Saturday are not likely to be similar to the trends which occurred on the previous day. For this reason, we develop a third lag called the “clean-lag”. The clean lag uses the 24 hour temporal lag on all days except for on Mondays and Saturdays when the 7 day lag is used.</p>
 <p>The charts below show the correlation between the 24 hour lag, the 1 week lag, and the clean lag and the number of bike trips at a given hour. As shown, there is generally a positive correlation between the number number of bike trips occuring at a station at a given hour and the temporal lag. The charts are also show the Pearson correlation value (i.e: R) which measures the strength of linear relationship between two variables. As shown, the clean lag has the highest correlation value, followed by the 1 week temporal lag.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>training <span class="sc">%&gt;%</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(lag24Hour, lag1week, clean_lag, sum_rides) <span class="sc">%&gt;%</span></span>
@@ -660,7 +692,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>    plotTheme</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Boston_BikeShare_files/figure-html/spatial_lag_plot-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="Boston_BikeShare_files/figure-html/spatial_lag_plot-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -719,7 +755,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul></li>
 </ul>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>reg1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(sum_rides <span class="sc">~</span>  <span class="fu">hour</span>(interval60) <span class="sc">+</span> dotw <span class="sc">+</span> time_of_day,  <span class="at">data=</span>training)</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -736,7 +772,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="assessing-model-errors">Assessing Model Errors</h2>
 <p>Having trained each of the modelling, we can now move on to testing our model against unseen data. The models were trained on data covering June 25th 2023 to July 15th 2023 and tested on data covering July 15th 2023 to July 31st 2023.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>ride.Test.weekNest <span class="ot">&lt;-</span> </span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  test <span class="sc">%&gt;%</span></span>
@@ -744,14 +780,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 </div>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>model_pred <span class="ot">&lt;-</span> <span class="cf">function</span>(dat, fit){</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>   pred <span class="ot">&lt;-</span> <span class="fu">predict</span>(fit, <span class="at">newdata =</span> dat)}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>week_predictions <span class="ot">&lt;-</span> </span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  ride.Test.weekNest <span class="sc">%&gt;%</span> </span>
@@ -769,7 +805,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>The next step is to assess the performance of our model. I use the five models to predict what ride share demand will be for the data points in our testing dataset. The testing dataset covers the last two weeks of July, and each model is used to predict the number of trips per hour at all stations within the study. The graph below shows the Mean absolute error by week for the five models. As shown below, model E has the lowest error in both week 3 and week 4 and appears to have the highest accuracy of the five models.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>week_predictions <span class="sc">%&gt;%</span></span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(week, Regression, MAE) <span class="sc">%&gt;%</span></span>
@@ -782,7 +818,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>    plotTheme</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Boston_BikeShare_files/figure-html/plot_errors_by_model-1.png" class="img-fluid" width="960"></p>
+<div>
+<figure class="figure">
+<p><img src="Boston_BikeShare_files/figure-html/plot_errors_by_model-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>The charts below show the total number of bike trips per hour predicted by our five models and compares the prediction to actual observations. The predictions are shown by the blue line while the observed line represents actual data. The model in which the prediction line most closely follows the observed line is model E, reinforcing the conclusion that model E has the best performance. Generally speaking, the prediction line for model E closely follows the observed line. Exceptions are present on July 16th, July 17th, and July 25th. Looking back at our exploratory analysis, can revel some clues as to why the model performs poorly on these dates.</p>
@@ -793,7 +833,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <p>While model E does have limitations, it does appear to produce close to accurate predictions on most days and the average error is around one bike trip. This indicates the model accuracy is high, despite having some challenges with effectively capturing the impacts of weather anomalies.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>week_predictions <span class="sc">%&gt;%</span> </span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">interval60 =</span> <span class="fu">map</span>(data, pull, interval60),</span>
@@ -812,7 +852,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>               <span class="at">date_labels =</span> <span class="st">"%b %d"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Boston_BikeShare_files/figure-html/error_vs_actual_timeseries -1.png" class="img-fluid" width="1248"></p>
+<div>
+<figure class="figure">
+<p><img src="Boston_BikeShare_files/figure-html/error_vs_actual_timeseries -1.png" class="img-fluid figure-img" width="1248"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -823,7 +867,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>We can observe that our errors tend to be larger at stations where the demand for bike share is higher. However, this finding is expected as it is easier for the model to predict demand at a station where the number of rides is consistently very low.</p>
 <p>One finding, which users of the model will need to keep in mind is that the model tends to on average under predict demand on weekdays at busy stations and over predict demand on weekends at busy stations.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>all_data<span class="sc">$</span>prediction <span class="ot">=</span> <span class="fu">predict</span>(reg5,all_data)</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>all_data<span class="sc">$</span>prediction <span class="ot">=</span> <span class="fu">round</span>((<span class="fu">ifelse</span>(all_data<span class="sc">$</span>prediction <span class="sc">&lt;</span> <span class="dv">0</span>,<span class="dv">0</span>,all_data<span class="sc">$</span>prediction)),<span class="dv">0</span>)</span>
@@ -866,13 +910,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb25-39"><a href="#cb25-39" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Boston_BikeShare_files/figure-html/generalizbility_space-1.png" class="img-fluid" width="1728"></p>
+<div>
+<figure class="figure">
+<p><img src="Boston_BikeShare_files/figure-html/generalizbility_space-1.png" class="img-fluid figure-img" width="1728"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>The charts below present the mean absolute error and the mean error by time of day. Separate charts are again presented for the weekend and weekdays. We can observe that the model has the highest error during the PM commute period. This is again expected, as periods when demand is higher are also likely to have larger errors. Errors are lowest during the overnight periods when demand is generally very low.</p>
 <p>On weekdays, the model tends to slightly under predict demand during the PM and AM period and tends to over predict demand during the overnight period. On weekends, the model tends to under predict around mid-day, which is the weekend period when demand is generally highest.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(<span class="at">ncol=</span><span class="dv">1</span>,</span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -896,7 +944,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb26-20"><a href="#cb26-20" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="Boston_BikeShare_files/figure-html/time_generalizability-1.png" class="img-fluid" width="768"></p>
+<div>
+<figure class="figure">
+<p><img src="Boston_BikeShare_files/figure-html/time_generalizability-1.png" class="img-fluid figure-img" width="768"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -945,18 +997,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -988,11 +1029,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1002,8 +1082,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1015,7 +1104,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1059,6 +1271,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1084,6 +1297,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1146,13 +1385,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">© cc-Richard Barad, 2024</div>   
+    <div class="nav-footer-left">
+<p>© cc-Richard Barad, 2024</p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
-    <div class="nav-footer-right">This page is built with <a href="https://quarto.org/">Quarto</a>.</div>
+    <div class="nav-footer-right">
+<p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
   </div>
 </footer>
+
 
 
 
