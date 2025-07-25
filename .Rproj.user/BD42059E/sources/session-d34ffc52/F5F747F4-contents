@@ -10,7 +10,7 @@ about:
   links:
     - icon: journal-code
       text: Full Policy Memo
-      href: PA_Policy_Memo.pdf
+      href: https://richardbarad.github.io/rbarad_portfolio/posts/PA_wind_mapping/PA_Policy_Memo.pdf
 format: 
   html:
     toc: true

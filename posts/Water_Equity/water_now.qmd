@@ -11,7 +11,8 @@ about:
   links:
     - icon: journal-code
       text: Report
-      href: Equity_Analysis_Report_Final_temp.pdf
+      href: https://richardbarad.github.io/rbarad_portfolio/posts/Water_Equity/Equity_Analysis_Report_Final_temp.pdf
+      
     - icon: github
       text: GitHub Repository
       href: https://github.com/The-Water-Center-at-Penn/DE_Basin_CWSRF_Analysis
