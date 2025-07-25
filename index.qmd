@@ -21,7 +21,9 @@ listing:
       - "posts/Bike_Boston/Boston_BikeShare.qmd"
       - "posts/TOD_Washington_DC/DCTOD.qmd"
       - "posts/Chicago_Inspections/Chicago_Restaurants.qmd"
-      - "posts/MUSA_capstone"
+      - "posts/MUSA_capstone/MUSA_capstone.qmd"
+      - "posts/Water_Equity/water_now.qmd"
+      - "posts/CLAP_Philly_Trees/PhillyTrees.qmd"
     type: grid
     fields: [title, categories, date]
     sort: "date desc"
