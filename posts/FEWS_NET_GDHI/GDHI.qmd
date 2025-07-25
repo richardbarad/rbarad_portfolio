@@ -1,5 +1,5 @@
 ---
-title: "Global Dashboard for Hostspot Indentification - Famine Early Warning Systems Network"
+title: "Global Dashboard for Hotspot Identification - Famine Early Warning Systems Network"
 author: "Richard Barad"
 image: gdhi_screenshoot.png
 date: "2024-01-01"
@@ -29,7 +29,7 @@ about:
 
 # Overview
 
-The Global Dashboard for Hotspot Identification (GDHI) is a screening tool used for by the Famine Early Warning System Network to identify potential food security areas of concern in the Horn of Africa. The GDHI provides FEWS NET with a rough estimate of potential food security durring the upcoming year. In my role as a Livelihood Monitoring Analyst at FEWS NET I was responsible for helping to build and run the GDHI on a monthly basis. The GDHI was developed as an Excel based tool, and historically analysts had to review the results of the analysis by e-mailing an Excel file with the results to everyone who needed them. 
+The Global Dashboard for Hotspot Identification (GDHI) is a screening tool used for by the Famine Early Warning System Network to identify potential food security areas of concern in the Horn of Africa. The GDHI provides FEWS NET with a rough estimate of potential food security during the upcoming year. In my role as a Livelihood Monitoring Analyst at FEWS NET I was responsible for helping to build and run the GDHI on a monthly basis. The GDHI was developed as an Excel based tool, and historically analysts had to review the results of the analysis by e-mailing an Excel file with the results to everyone who needed them. 
 In order to make the results more accessible I set-up a data visualization system to display the results using Microsoft Power BI and ArcGIS Online. Additionally, I developed a Python script that reads the results from an Excel file, transforms the results into the formats needed by Power BI and ArcGIS Online, and publishes the results. Browse below to view the python script, ArcGIS Online Maps, and Power BI Dashboard. Links to view the Power BI Dashboard and ArcGIS Online Maps in full screen are available above. 
 
 A link to a video overview of the GDHI is also included above. Please watch the video if you are interested in learning more about how the GDHI works and how FEWS NET uses the map and dashboard tools I created.

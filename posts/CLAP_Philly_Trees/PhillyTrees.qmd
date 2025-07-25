@@ -1,0 +1,62 @@
+---
+title: "Philly Tree Plan - Update and Call to Action for the Philadelphia City Council"
+author: "Richard Barad, Stephanie Cheng, Yonghyeon Kim, and Marissa O’Neill"
+image: 'philly_trees.png'
+date: "2024-05-15"
+categories: [R, Environment]
+about:
+  id: hero-heading
+  image-width: 0em
+  template: solana
+  links:
+    - icon: journal-code
+      text: Report
+      href: ClaP_Report.pdf
+    - icon: github
+      text: GitHub Repository
+      href: https://github.com/richardbarad/Clap_PhillyTrees
+    
+format: 
+  html:
+    toc: true
+    code-fold: true
+    fontsize: 11pt
+execute:
+  echo: true
+---
+
+# Overview
+
+::: {.grid}
+
+<!-- Left column has a width of 4/12 and shows a picture of me -->
+::: {.g-col-6}
+::: {.left-align}
+
+The importance of trees in urban areas needs no overstating–urban trees serve as vital pillars of environmental health, community well-being, and sustainable urban development. With Philadelphia’s urban forest shrinking, the Philly Tree Plan was created to support the livability of the City. From 2008 to 2018, Philadelphia lost 6% of its tree canopy, the equivalent of more than 1,000 football fields. While Philadelphia boasts a robust network of city agencies and nongovernmental organizations that are making strides to plant and maintain trees, we are not keeping up with the loss of trees due to a
+range of factors, including new construction, disease, and age.
+
+This memo was created by a team of Climate Leaders at Penn on behalf of PhillyTREES and is being used by PhillyTREES to advocate for continued funding for tree plan related activities in Philadelphia. The policy provides some background information on the Philly Tree Plan, the benifits of Trees in Urban Areas, the current plan implementation status, and recommendations to support the success of the plan.
+
+:::
+:::
+
+
+::: {.g-col-6}
+![](philly_trees.png)
+
+:::
+:::
+
+The authors would like to thank the Philadelphia Department of Parks and Recreation for providing the data on tree plantings and pruning activities in the city and updates on the current plan implementation status. Data on tree canopy and urban street trees was downloaded from the City of Philadelphia open data portal. 
+
+The full published report is available below. 
+
+```{=html}
+<iframe 
+  width="800" 
+  height="800" 
+  src="ClaP_Report.pdf">
+</iframe>
+```
+

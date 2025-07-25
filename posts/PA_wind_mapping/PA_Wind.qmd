@@ -10,7 +10,7 @@ about:
   links:
     - icon: journal-code
       text: Full Policy Memo
-      href: posts/PA_wind_mapping/PA_Policy_Memo.pdf
+      href: PA_Policy_Memo.pdf
 format: 
   html:
     toc: true

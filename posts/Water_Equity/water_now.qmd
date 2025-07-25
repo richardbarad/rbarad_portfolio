@@ -1,0 +1,66 @@
+---
+title: "Equity Analysis of Clean Water and Drinking Water State Revolving Fund Financing in the Delaware River Basin"
+author: "Richard Barad, Ellen Kohler, Erica Depalma, Alex Cartwright"
+image: 'financing.png'
+date: "2024-05-15"
+categories: [R, Environment]
+about:
+  id: hero-heading
+  image-width: 0em
+  template: solana
+  links:
+    - icon: journal-code
+      text: Report
+      href: Equity_Analysis_Report_Final_temp.pdf
+    - icon: github
+      text: GitHub Repository
+      href: https://github.com/The-Water-Center-at-Penn/DE_Basin_CWSRF_Analysis
+    
+format: 
+  html:
+    toc: true
+    code-fold: true
+    fontsize: 11pt
+execute:
+  echo: true
+---
+
+# Overview
+
+::: {.grid}
+
+<!-- Left column has a width of 4/12 and shows a picture of me -->
+::: {.g-col-6}
+::: {.left-align}
+
+This report analyzes the equity of Clean Water State Revolving Fund (CWSRF) and Drinking Water State Revolving Fund (DWSRF) project financing in the Delaware River Basin. Specifically, it aims to answer the question of whether water infrastructure financing and subsidies are reaching areas that have been identified as low income and/or environmentally burdened communities. I was the lead author for the report and wrote it while working as a research fellow at the Water Center at Penn. The report was a collaboration between American Rivers and the Water Center at Penn and contributions were made by Ellen Kohler, Erica Depalma and Alex Carwright from the Water Center at Penn and Lia Mastropolo and Sarah Bach from American Rivers. 
+
+The report consolidates two separately conducted analyses:
+
+◼ The first is focused on the DWSRF and uses a dataset compiled by the Environmental Protection Agency (EPA), shared by the Environmentally Policy Innovation Center (EPIC) and includes all DWSRF projects funded in Delaware, Pennsylvania, and New Jersey between 2009 and 2021. This analysis was completed in 2022.
+
+◼ The second is focused on the CWSRF and uses a dataset provided by the EPA in 2023 that includes all CWSRF projects funded in Delaware, New Jersey, and Pennsylvania from July 2017 to June 2023. The database was obtained through a Freedom of Information Act Request (FOIA) submitted by the Water Center at Penn. This analysis was carried out in 2024.
+
+
+:::
+:::
+
+
+::: {.g-col-6}
+![](financing.png)
+
+:::
+:::
+
+The authors would like to thank the Philadelphia Department of Parks and Recreation for providing the data on tree plantings and pruning activities in the city and updates on the current plan implementation status. Data on tree canopy and urban street trees was downloaded from the City of Philadelphia open data portal. 
+
+The full published report is available below. 
+
+```{=html}
+<iframe 
+  width="800" 
+  height="800" 
+  src="Equity_Analysis_Report_Final_temp.pdf">
+</iframe>
+```
+
